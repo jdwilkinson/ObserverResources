@@ -44,39 +44,36 @@ p {
   cursor: pointer;
 }
 
-.global-state-panel {
-  position: fixed;
-  right: 0;
-  top: 1.5em;
-  width: 400px;
-  height: 100%;
-  overflow: scroll;
-  background: #DDDDDD;
-  color: #444444;
-}
-
-.global-state-showhide {
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 400px;
-  height: 1.5em;
-  background: #DDDDDD;
-  color: #888888;
-  text-align: center;
-}
-
-.observer-pairing-table {
-  border: 1px solid black;
-  border-collapse: collapse;
-  white-space: nowrap;
-}
-
-.observer-pairing-numerical-penalty {
-  width: 3em;
-}
-
 .grayscale {
   filter: grayscale(1) opacity(0.5);
   color: gray;
+}
+
+.section-header {
+  background-color: maroon;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  min-width: 400px;
+  min-height: 20px;
+  padding: 5px;
+  margin-top: 3px;
+  vertical-align: center;
+  border-left: 1px solid darkgray;
+  border-right: 1px solid darkgray;
+  border-top: 1px solid darkgray;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.section-content {
+  background-color: white;
+  color: black;
+  font-size: medium;
+  min-width: 400px;
+  padding: 5px;
+  margin-bottom: 3px;
+  border-left: 1px solid darkgray;
+  border-right: 1px solid darkgray;
+  border-bottom: 1px solid darkgray;
+  border-radius: 0 0 1rem 1rem;
 }
