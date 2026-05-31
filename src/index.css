@@ -77,3 +77,9 @@ p {
   border-bottom: 1px solid darkgray;
   border-radius: 0 0 1rem 1rem;
 }
+
+.scorecard {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+}

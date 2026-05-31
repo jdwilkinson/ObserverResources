@@ -1,4 +1,6 @@
 import CollapsibleSection from './CollapsibleSection';
+import Resources from './resources/Resources';
+import Scorecard from './types/Scorecard';
 
 const App = () => {
   return (
@@ -15,8 +17,9 @@ const App = () => {
         </CollapsibleSection>
 
         <CollapsibleSection sectionTitle="Scorecards">
+          {Resources.scorecards.map((sc: Scorecard) => (sc.render()))}
+
           <ul>
-            <li>Official one from the observer manual</li>
             <li>Zeta's horizontal style</li>
             <li>Wally's vertical style</li>
           </ul>
