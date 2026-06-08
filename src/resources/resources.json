@@ -22,5 +22,17 @@
             "courtesyOf": "Joey",
             "link": "/scorecards/scorecard-joey.pdf"
         }
+    ],
+    "shoes": [
+        {
+            "id": "shoes-speedcross",
+            "image": {
+                "sourceUrl": "/shoes/shoes-speedcross.png",
+                "width": 200,
+                "height": 170
+            },
+            "description": "For those who prefer trail-runners over cleats, these seem to be the de-facto standard.  They're black, and come in men's, women's, wide, and Gore-Tex.",
+            "link": "https://www.salomon.com/en-us/c/shoes/icons/speedcross/shopby/colors-black"
+        }
     ]
 }

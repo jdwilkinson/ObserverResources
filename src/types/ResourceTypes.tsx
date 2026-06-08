@@ -1,10 +1,14 @@
 import Resource from "./Resource";
 import { ResourceProperties } from "./Resource";
 
-class Scorecard extends Resource {
+export class Scorecard extends Resource {
     static createFromObject(obj: ResourceProperties): Scorecard {
         return new Scorecard(obj);
     }
 }
 
-export default Scorecard;
+export class Shoe extends Resource {
+    static createFromObject(obj: ResourceProperties): Shoe {
+        return new Shoe(obj);
+    }
+}

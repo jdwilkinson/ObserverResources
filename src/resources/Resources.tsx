@@ -1,10 +1,9 @@
 import data from "./resources.json";
-import Scorecard from "../types/Scorecard";
-
-const scorecards = data.scorecards.map(sc => Scorecard.createFromObject(sc));
+import { Scorecard, Shoe } from "../types/ResourceTypes";
 
 const Resources = {
-    "scorecards": scorecards,
+    "scorecards": data.scorecards.map(sc => Scorecard.createFromObject(sc)),
+    "shoes": data.shoes.map(shoe => Shoe.createFromObject(shoe)),
 };
 
 export default Resources;

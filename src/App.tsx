@@ -1,6 +1,6 @@
 import CollapsibleSection from './CollapsibleSection';
 import Resources from './resources/Resources';
-import Scorecard from './types/Scorecard';
+import { Scorecard, Shoe } from './types/ResourceTypes';
 
 const App = () => {
   return (
@@ -14,6 +14,10 @@ const App = () => {
 
         <CollapsibleSection sectionTitle="Other apparel recommendations">
           (scour Discord for shorts, jackets, hats, etc)
+        </CollapsibleSection>
+
+        <CollapsibleSection sectionTitle="Shoes">
+          {Resources.shoes.map((shoe: Shoe) => (shoe.render()))}
         </CollapsibleSection>
 
         <CollapsibleSection sectionTitle="Scorecards">
