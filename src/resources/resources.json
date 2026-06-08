@@ -3,21 +3,23 @@
         {
             "id": "scorecard-usau",
             "isOfficialUsauResource": true,
-            "imageSource": "/scorecards/scorecard-usau.png",
-            "imageWidth": 122,
-            "imageHeight": 200,
+            "image": {
+                "sourceUrl": "/scorecards/scorecard-usau.png",
+                "width": 122,
+                "height": 200
+            },
             "description": "Official USAU scorecard",
-            "author": "",
             "link": "/scorecards/scorecard-usau.pdf"
         },
         {
             "id": "scorecard-joey",
-            "isOfficialUsauResource": false,
-            "imageSource": "/scorecards/scorecard-joey.png",
-            "imageWidth": 158,
-            "imageHeight": 200,
+            "image": {
+                "sourceUrl": "/scorecards/scorecard-joey.png",
+                "width": 158,
+                "height": 200
+            },
             "description": "Vertical with shading",
-            "author": "Joey",
+            "courtesyOf": "Joey",
             "link": "/scorecards/scorecard-joey.pdf"
         }
     ]

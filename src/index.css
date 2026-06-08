@@ -78,8 +78,10 @@ p {
   border-radius: 0 0 1rem 1rem;
 }
 
-.scorecard {
+.resource-card {
   display: inline-block;
   text-align: center;
   padding: 10px;
+  border: 1px solid lightgray;
+  margin: 5px;
 }
