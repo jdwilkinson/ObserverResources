@@ -1,7 +1,8 @@
 import data from "./resources.json";
-import { Scorecard, Shoe } from "../types/ResourceTypes";
+import { Jersey, Scorecard, Shoe } from "../types/ResourceTypes";
 
 const Resources = {
+    "jerseys": data.jerseys.map(jersey => Jersey.createFromObject(jersey)),
     "scorecards": data.scorecards.map(sc => Scorecard.createFromObject(sc)),
     "shoes": data.shoes.map(shoe => Shoe.createFromObject(shoe)),
 };

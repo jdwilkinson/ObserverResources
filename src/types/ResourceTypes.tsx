@@ -12,3 +12,9 @@ export class Shoe extends Resource {
         return new Shoe(obj);
     }
 }
+
+export class Jersey extends Resource {
+    static createFromObject(obj: ResourceProperties): Jersey {
+        return new Jersey(obj);
+    }
+}

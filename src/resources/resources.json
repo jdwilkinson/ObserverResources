@@ -1,4 +1,38 @@
 {
+    "jerseys": [
+        {
+            "id": "jersey-short-orange",
+            "isOfficialUsauResource": true,
+            "image": {
+                "sourceUrl": "/jerseys/jersey-short-orange.png",
+                "width": 165,
+                "height": 200
+            },
+            "description": "Official USAU orange jersey",
+            "link": "https://www.spinultimate.com/collections/usa-ultimate-observer-jerseys/products/observer-short-sleeve-jersey-orange"
+        },
+        {
+            "id": "jersey-short-green",
+            "isOfficialUsauResource": true,
+            "image": {
+                "sourceUrl": "/jerseys/jersey-short-green.png",
+                "width": 159,
+                "height": 200
+            },
+            "description": "Official USAU green jersey",
+            "link": "https://www.spinultimate.com/collections/usa-ultimate-observer-jerseys/products/observer-short-sleeve-jersey-kelly"
+        },
+        {
+            "id": "jersey-long-orange",
+            "image": {
+                "sourceUrl": "/jerseys/jersey-long-orange.png",
+                "width": 167,
+                "height": 200
+            },
+            "description": "Long-sleeve orange jersey",
+            "link": "https://www.spinultimate.com/collections/usa-ultimate-observer-jerseys/products/observer-long-sleeve-jersey-orange"
+        }
+    ],
     "scorecards": [
         {
             "id": "scorecard-usau",

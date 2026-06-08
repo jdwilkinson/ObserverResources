@@ -1,6 +1,6 @@
 import CollapsibleSection from './CollapsibleSection';
 import Resources from './resources/Resources';
-import { Scorecard, Shoe } from './types/ResourceTypes';
+import { Jersey, Scorecard, Shoe } from './types/ResourceTypes';
 
 const App = () => {
   return (
@@ -8,8 +8,8 @@ const App = () => {
       <section>
         <h1>Resources to include</h1>
 
-        <CollapsibleSection sectionTitle="Official jerseys">
-          <a href='https://www.spinultimate.com/collections/usa-ultimate-observer-jerseys'>Link to Spin store</a>
+        <CollapsibleSection sectionTitle="Jerseys">
+          {Resources.jerseys.map((jersey: Jersey) => (jersey.render()))}
         </CollapsibleSection>
 
         <CollapsibleSection sectionTitle="Other apparel recommendations">
