@@ -63,9 +63,9 @@ p {
   padding: 5px;
   margin-top: 3px;
   vertical-align: center;
-  border-left: 1px solid darkgray;
-  border-right: 1px solid darkgray;
-  border-top: 1px solid darkgray;
+  border-left: 1px solid #9d1535;
+  border-right: 1px solid #9d1535;
+  border-top: 1px solid #9d1535;
   border-radius: 1rem 1rem 0 0;
 
   /* To align header and expand/collapse to the sides */
@@ -81,9 +81,9 @@ p {
   min-width: 400px;
   padding: 5px;
   margin-bottom: 3px;
-  border-left: 1px solid darkgray;
-  border-right: 1px solid darkgray;
-  border-bottom: 1px solid darkgray;
+  border-left: 1px solid #9d1535;
+  border-right: 1px solid #9d1535;
+  border-bottom: 1px solid #9d1535;
   border-radius: 0 0 1rem 1rem;
 }
 

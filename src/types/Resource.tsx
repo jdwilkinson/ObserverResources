@@ -50,6 +50,7 @@ abstract class Resource {
                         width={this.image.width}
                         height={this.image.height}
                         alt={this.getImageAltText()}
+                        title={this.getImageAltText()}
                     />
                 </a>
                 <p>
@@ -74,7 +75,13 @@ abstract class Resource {
         if (this.isOfficialUsauResource) {
             return (<>
                 <br />
-                <img src='/img/usau-logo.svg' alt='Official USAU resource' width='80' height='38' />
+                <img
+                    src='/img/usau-logo.svg'
+                    width='80'
+                    height='38'
+                    alt='Official USAU resource'
+                    title='Official USAU resource'
+                />
             </>);
         }
         if (this.courtesyOf && this.courtesyOf.trim() !== '') {

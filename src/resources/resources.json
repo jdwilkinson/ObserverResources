@@ -33,6 +33,54 @@
             "link": "https://www.spinultimate.com/collections/usa-ultimate-observer-jerseys/products/observer-long-sleeve-jersey-orange"
         }
     ],
+    "rules": [
+        {
+            "id": "rules-usau",
+            "isOfficialUsauResource": true,
+            "image": {
+                "sourceUrl": "/img/usau-logo.svg",
+                "width": 122,
+                "height": 200
+            },
+            "description": "USAU rules (web)",
+            "link": "https://usaultimate.org/rules/"
+        },
+        {
+            "id": "rules-usau-pdf",
+            "isOfficialUsauResource": true,
+            "image": {
+                "sourceUrl": "/img/pdf-logo.png",
+                "width": 158,
+                "height": 200
+            },
+            "description": "USAU rules (PDF)",
+            "link": "https://usaultimate.org/wp-content/uploads/2025/12/2026-27-Official-Rules-of-Ultimate.pdf"
+        },
+        {
+            "id": "dynamic-rules",
+            "image": {
+                "sourceUrl": "/rules/rules-dynamic.png",
+                "width": 200,
+                "height": 119
+            },
+            "description": "Dynamic rules",
+            "courtesyOf": "Austin",
+            "link": "https://afbcary.github.io/regula_nexus/"
+        }
+    ],
+    "observerManuals": [
+        {
+            "id": "observer-manual-usau",
+            "isOfficialUsauResource": true,
+            "image": {
+                "sourceUrl": "/img/pdf-logo.png",
+                "width": 158,
+                "height": 200
+            },
+            "description": "USAU observer manual (PDF)",
+            "link": "https://usaultimate.org/wp-content/uploads/2020/11/2024-Observer-Manual-2024-04-25.pdf"
+        }
+    ],
     "scorecards": [
         {
             "id": "scorecard-usau",

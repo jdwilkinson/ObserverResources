@@ -1,6 +1,6 @@
 import CollapsibleSection from './CollapsibleSection';
 import Resources from './resources/Resources';
-import { Jersey, Scorecard, Shoe } from './types/ResourceTypes';
+import { Jersey, ObserverManual, Rules, Scorecard, Shoe } from './types/ResourceTypes';
 
 const App = () => {
   return (
@@ -8,12 +8,12 @@ const App = () => {
       <section>
         <h1 className="topmost-header">Resources for observers</h1>
 
-        <CollapsibleSection sectionTitle="Official documents">
-          TODO: Gather these official documents:
-          <ul>
-            <li>Rules (<a href='https://usaultimate.org/rules/'>Source</a>)</li>
-            <li>Observer manual (<a href='https://usaultimate.org/wp-content/uploads/2020/11/2024-Observer-Manual-2024-04-25.pdf'>Outdated link</a>, <a href='https://usaultimate.org/observers/'>Source</a>)</li>
-          </ul>
+        <CollapsibleSection sectionTitle="Rules">
+          {Resources.rules.map((rule: Rules) => (rule.render()))}
+        </CollapsibleSection>
+
+        <CollapsibleSection sectionTitle="Observer manual">
+          {Resources.observerManuals.map((manual: ObserverManual) => (manual.render()))}
         </CollapsibleSection>
 
         <CollapsibleSection sectionTitle="Jerseys">
