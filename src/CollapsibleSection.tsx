@@ -7,12 +7,22 @@ const CollapsibleSection = (props: { sectionTitle: string; children: React.React
         setCollapsed(!collapsed);
     }
 
+    function getToggleVerb(): string {
+        // Derived from https://stackoverflow.com/a/77654885
+        const userAgent = navigator?.userAgent?.toLowerCase();
+        if (userAgent) {
+            const isMobile = /iphone|ipad|ipod|android|windows phone/g.test(userAgent);
+            const isTablet = /(ipad|tablet|playbook|silk)|(android(?!.*mobile))/g.test(userAgent);
+            return isMobile || isTablet ? "tap" : "click";
+        }
+        return "click";
+    }
+
     return (
         <>
             <div className="section-header" onClick={onClick}>
-                {props.sectionTitle}
-                &nbsp;
-                <span className="grayscale">(click to {collapsed ? "expand" : "collapse"})</span>
+                <span>{props.sectionTitle}</span>
+                <span className="click-to-collapse">({getToggleVerb()} to {collapsed ? "expand" : "collapse"})</span>
             </div>
             {collapsed ?
                 <></> :

@@ -45,9 +45,10 @@ p {
   cursor: pointer;
 }
 
-.grayscale {
+.click-to-collapse {
   filter: grayscale(1) opacity(0.4);
   color: white;
+  font-size: small;
 }
 
 .section-header {
@@ -66,6 +67,11 @@ p {
   border-right: 1px solid darkgray;
   border-top: 1px solid darkgray;
   border-radius: 1rem 1rem 0 0;
+
+  /* To align header and expand/collapse to the sides */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .section-content {
