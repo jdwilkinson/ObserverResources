@@ -1,4 +1,17 @@
 {
+    "books": [
+        {
+            "id": "book-social-ref",
+            "image": {
+                "sourceUrl": "/books/book-social-ref.jpg",
+                "width": 200,
+                "height": 200
+            },
+            "description": "The Social Ref",
+            "courtesyOf": "Zeta",
+            "link": "https://www.amazon.com/Social-Ref-Become-Better-Referee/dp/1793133549"
+        }
+    ],
     "jerseys": [
         {
             "id": "jersey-short-orange",

@@ -1,6 +1,6 @@
 import CollapsibleSection from './CollapsibleSection';
 import Resources from './resources/Resources';
-import { Jersey, ObserverManual, Rules, Scorecard, Shoe } from './types/ResourceTypes';
+import { Book, Jersey, ObserverManual, Rules, Scorecard, Shoe } from './types/ResourceTypes';
 
 const App = () => {
   return (
@@ -48,10 +48,7 @@ const App = () => {
         </CollapsibleSection>
 
         <CollapsibleSection sectionTitle="Books">
-          TODO: Convert this into a resource:
-          <ul>
-            <li><a href='https://www.amazon.com/Social-Ref-Become-Better-Referee/dp/1793133549'>The Social Ref book</a></li>
-          </ul>
+          {Resources.books.map((book: Book) => (book.render()))}
         </CollapsibleSection>
 
         <CollapsibleSection sectionTitle="Rules quizzes">
@@ -76,6 +73,7 @@ const App = () => {
           </ul>
         </CollapsibleSection>
       </section>
+
       <section>
         <div className="footer">
           Last updated <b>2026-06-12</b>; see&nbsp;
