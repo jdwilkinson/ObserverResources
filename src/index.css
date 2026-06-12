@@ -13,7 +13,8 @@ body {
 
 main {
   display: grid;
-  min-height: 100vh;
+  min-height: 80vh;
+  min-height: 80dvh;
   place-items: center;
   padding: 2rem;
 }
@@ -23,7 +24,7 @@ section {
   border-radius: 1rem;
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
   max-width: 100%;
-  padding: 2rem;
+  padding: 0.5rem;
 }
 
 h1 {
@@ -54,7 +55,7 @@ p {
   background-color: #9d1535;
 
   color: white;
-  font-size: x-large;
+  font-size: large;
   font-weight: bold;
   min-width: 400px;
   min-height: 20px;
@@ -86,4 +87,14 @@ p {
   padding: 10px;
   border: 1px solid lightgray;
   margin: 5px;
+}
+
+.footer {
+  font-size: small;
+  color: #334155;
+  text-align: center;
+}
+
+.topmost-header {
+  text-align: center;
 }
