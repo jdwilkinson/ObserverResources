@@ -14,6 +14,7 @@ export type ResourceImage = {
 }
 
 abstract class Resource {
+    protected resourceType: string;
     protected id: string;
     protected image: ResourceImage;
     protected description: string;
@@ -21,14 +22,17 @@ abstract class Resource {
     protected isOfficialUsauResource: boolean;
     protected courtesyOf: string;
 
-    constructor({
-        id,
-        image,
-        description,
-        link,
-        isOfficialUsauResource = false,
-        courtesyOf = '',
-    }: ResourceProperties) {
+    constructor(
+        resourceType: string,
+        {
+            id,
+            image,
+            description,
+            link,
+            isOfficialUsauResource = false,
+            courtesyOf = '',
+        }: ResourceProperties) {
+        this.resourceType = resourceType;
         this.id = id;
         this.image = image;
         this.description = description;
@@ -61,9 +65,9 @@ abstract class Resource {
             return 'Official USAU resource';
         }
         if (this.courtesyOf.trim() !== '') {
-            return `Resource by ${this.courtesyOf}`;
+            return `${this.resourceType} courtesy of ${this.courtesyOf}`;
         }
-        return '';
+        return this.description;
     }
 
     private getPostDescriptionFooter(): JSX.Element {
