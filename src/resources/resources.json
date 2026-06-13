@@ -46,6 +46,51 @@
             "link": "https://www.spinultimate.com/collections/usa-ultimate-observer-jerseys/products/observer-long-sleeve-jersey-orange"
         }
     ],
+    "observerManuals": [
+        {
+            "id": "observer-manual-usau",
+            "isOfficialUsauResource": true,
+            "image": {
+                "sourceUrl": "/img/pdf-logo.png",
+                "width": 158,
+                "height": 200
+            },
+            "description": "USAU observer manual (PDF)",
+            "link": "https://usaultimate.org/wp-content/uploads/2020/11/2024-Observer-Manual-2024-04-25.pdf"
+        }
+    ],
+    "observerUniversityVideos": [
+        {
+            "id": "observer-university-1",
+            "image": {
+                "sourceUrl": "/observer-university/observer-university-1.png",
+                "width": 200,
+                "height": 183
+            },
+            "description": "Volume 1",
+            "link": "https://www.youtube.com/watch?v=jEssYG0SwO8"
+        },
+        {
+            "id": "observer-university-2",
+            "image": {
+                "sourceUrl": "/observer-university/observer-university-2.png",
+                "width": 200,
+                "height": 122
+            },
+            "description": "Volume 2",
+            "link": "https://www.youtube.com/watch?v=HndetKAiOmE"
+        },
+        {
+            "id": "observer-university-3",
+            "image": {
+                "sourceUrl": "/observer-university/observer-university-3.png",
+                "width": 200,
+                "height": 83
+            },
+            "description": "Volume 3",
+            "link": "https://www.youtube.com/watch?v=5ayEnILKlK4"
+        }
+    ],
     "rules": [
         {
             "id": "rules-usau",
@@ -79,19 +124,6 @@
             "description": "Dynamic rules",
             "courtesyOf": "Austin",
             "link": "https://afbcary.github.io/regula_nexus/"
-        }
-    ],
-    "observerManuals": [
-        {
-            "id": "observer-manual-usau",
-            "isOfficialUsauResource": true,
-            "image": {
-                "sourceUrl": "/img/pdf-logo.png",
-                "width": 158,
-                "height": 200
-            },
-            "description": "USAU observer manual (PDF)",
-            "link": "https://usaultimate.org/wp-content/uploads/2020/11/2024-Observer-Manual-2024-04-25.pdf"
         }
     ],
     "scorecards": [

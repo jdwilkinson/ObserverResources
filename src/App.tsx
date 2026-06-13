@@ -1,6 +1,6 @@
 import CollapsibleSection from './CollapsibleSection';
 import Resources from './resources/Resources';
-import { Book, Jersey, ObserverManual, Rules, Scorecard, Shoe } from './types/ResourceTypes';
+import { Book, Jersey, ObserverManual, ObserverUniversityVideo, Rules, Scorecard, Shoe } from './types/ResourceTypes';
 
 const App = () => {
   return (
@@ -39,12 +39,7 @@ const App = () => {
         </CollapsibleSection>
 
         <CollapsibleSection sectionTitle="Observer University videos">
-          TODO: Convert these links into resources:
-          <ul>
-            <li><a href='https://www.youtube.com/watch?v=jEssYG0SwO8'>Volume 1</a></li>
-            <li><a href='https://www.youtube.com/watch?v=HndetKAiOmE'>Volume 2</a></li>
-            <li><a href='https://www.youtube.com/watch?v=HndetKAiOmE'>Volume 3</a></li>
-          </ul>
+          {Resources.observerUniversityVideos.map((video: ObserverUniversityVideo) => (video.render()))}
         </CollapsibleSection>
 
         <CollapsibleSection sectionTitle="Books">

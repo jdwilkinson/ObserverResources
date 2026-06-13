@@ -19,6 +19,12 @@ export class ObserverManual extends Resource {
     }
 }
 
+export class ObserverUniversityVideo extends Resource {
+    static createFromObject(obj: ResourceProperties): ObserverUniversityVideo {
+        return new ObserverUniversityVideo("Observer University video", obj);
+    }
+}
+
 export class Rules extends Resource {
     static createFromObject(obj: ResourceProperties): Rules {
         return new Rules("Rules", obj);
