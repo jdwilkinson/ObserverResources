@@ -163,6 +163,17 @@
             "link": "/scorecards/scorecard-usau.pdf"
         },
         {
+            "id": "scorecard-zeta",
+            "image": {
+                "sourceUrl": "/scorecards/scorecard-zeta.png",
+                "width": 127,
+                "height": 200
+            },
+            "description": "Horizontal with ABBA",
+            "courtesyOf": "Zeta",
+            "link": "/scorecards/scorecard-zeta.pdf"
+        },
+        {
             "id": "scorecard-joey",
             "image": {
                 "sourceUrl": "/scorecards/scorecard-joey.png",

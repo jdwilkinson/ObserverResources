@@ -23,20 +23,17 @@ const App = () => {
         <CollapsibleSection sectionTitle="Scorecards">
           {Resources.scorecards.map((sc: Scorecard) => (sc.render()))}
 
-          TODO: Gather these additional ones:
-          <ul>
-            <li>Zeta's horizontal style</li>
-            <li>Wally's vertical style</li>
-          </ul>
+          {/* TODO: Add Wally's vertical scorecard */}
         </CollapsibleSection>
 
         <CollapsibleSection sectionTitle="Shoes">
           {Resources.shoes.map((shoe: Shoe) => (shoe.render()))}
         </CollapsibleSection>
 
-        <CollapsibleSection sectionTitle="Apparel">
-          TODO: Scour Discord for shorts, jackets, hats, etc
-        </CollapsibleSection>
+        {/* TODO: Scour Discord for shorts, jackets, hats, etc */}
+        {/* <CollapsibleSection sectionTitle="Apparel">
+          ...
+        </CollapsibleSection> */}
 
         <CollapsibleSection sectionTitle="Observer University videos">
           {Resources.observerUniversityVideos.map((video: ObserverUniversityVideo) => (video.render()))}
@@ -50,12 +47,10 @@ const App = () => {
           {Resources.rulesQuizzes.map((quiz: RulesQuiz) => (quiz.render()))}
         </CollapsibleSection>
 
-        <CollapsibleSection sectionTitle="Video replays">
-          TODO: Consider whether this is the right place to put video resources
-          <ul>
-            <li>...</li>
-          </ul>
-        </CollapsibleSection>
+        {/* TODO: Consider whether this is the right place to put video resources */}
+        {/* <CollapsibleSection sectionTitle="Video replays">
+          ...
+        </CollapsibleSection> */}
 
         <CollapsibleSection sectionTitle="Apps">
           TODO: Scour Discord for apps
