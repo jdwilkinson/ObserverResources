@@ -1,6 +1,6 @@
 import CollapsibleSection from './CollapsibleSection';
 import Resources from './resources/Resources';
-import { Book, Jersey, ObserverManual, ObserverUniversityVideo, Rules, Scorecard, Shoe } from './types/ResourceTypes';
+import { Book, Jersey, ObserverManual, ObserverUniversityVideo, Rules, RulesQuiz, Scorecard, Shoe } from './types/ResourceTypes';
 
 const App = () => {
   return (
@@ -47,11 +47,7 @@ const App = () => {
         </CollapsibleSection>
 
         <CollapsibleSection sectionTitle="Rules quizzes">
-          TODO: Gather and/or duplicate at least these rules quizzes:
-          <ul>
-            <li><a href='https://docs.google.com/forms/d/e/1FAIpQLScidc_cjJymmk79dqUQKoIT4XOlqpDhVVwxkM3K7AxdEiYL2g/viewform?usp=send_form'>College Nationals 2026 pre-quiz</a></li>
-            <li>Other rules quizzes from Cotton?</li>
-          </ul>
+          {Resources.rulesQuizzes.map((quiz: RulesQuiz) => (quiz.render()))}
         </CollapsibleSection>
 
         <CollapsibleSection sectionTitle="Video replays">

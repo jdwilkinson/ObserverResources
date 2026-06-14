@@ -31,6 +31,12 @@ export class Rules extends Resource {
     }
 }
 
+export class RulesQuiz extends Resource {
+    static createFromObject(obj: ResourceProperties): RulesQuiz {
+        return new RulesQuiz("Rules quiz", obj);
+    }
+}
+
 export class Scorecard extends Resource {
     static createFromObject(obj: ResourceProperties): Scorecard {
         return new Scorecard("Scorecard", obj);

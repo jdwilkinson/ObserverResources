@@ -126,6 +126,30 @@
             "link": "https://afbcary.github.io/regula_nexus/"
         }
     ],
+    "rulesQuizzes": [
+        {
+            "id": "rules-quiz-usau",
+            "isOfficialUsauResource": true,
+            "image": {
+                "sourceUrl": "/rules-quizzes/rules-quiz-usau.png",
+                "width": 200,
+                "height": 75
+            },
+            "description": "USAU college rules quiz",
+            "link": "https://docs.google.com/forms/d/e/1FAIpQLSdGJ-G4_BF9gTRPCHvjkmRrc8ADFQAgUXWni6UgO0NOeFQYWQ/viewform"
+        },
+        {
+            "id": "rules-quiz-cotton",
+            "image": {
+                "sourceUrl": "/rules-quizzes/rules-quiz-cotton.png",
+                "width": 200,
+                "height": 97
+            },
+            "description": "Cotton's rules quiz",
+            "courtesyOf": "Cotton",
+            "link": "https://docs.google.com/forms/d/e/1FAIpQLSfoOE97ZO3hYOoVHLQXwuXoEOHmofdJbqfedIyZGFq3F_wQQg/viewform"
+        }
+    ],
     "scorecards": [
         {
             "id": "scorecard-usau",

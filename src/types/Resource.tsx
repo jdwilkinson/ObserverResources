@@ -63,7 +63,7 @@ abstract class Resource {
 
     private getImageAltText(): string {
         if (this.isOfficialUsauResource) {
-            return 'Official USAU resource';
+            return `Official USAU ${this.resourceType.toLowerCase()}`;
         }
         if (this.courtesyOf.trim() !== '') {
             return `${this.resourceType} courtesy of ${this.courtesyOf}`;
