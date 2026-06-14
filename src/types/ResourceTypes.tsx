@@ -1,6 +1,12 @@
 import Resource from "./Resource";
 import { ResourceProperties } from "./Resource";
 
+export class App extends Resource {
+    static createFromObject(obj: ResourceProperties): App {
+        return new App("App", obj);
+    }
+}
+
 export class Book extends Resource {
     static createFromObject(obj: ResourceProperties): Book {
         return new Book("Book", obj);

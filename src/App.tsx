@@ -1,6 +1,6 @@
 import CollapsibleSection from './CollapsibleSection';
 import Resources from './resources/Resources';
-import { Book, Jersey, ObserverManual, ObserverUniversityVideo, Rules, RulesQuiz, Scorecard, Shoe } from './types/ResourceTypes';
+import { App as AppResource, Book, Jersey, ObserverManual, ObserverUniversityVideo, Rules, RulesQuiz, Scorecard, Shoe } from './types/ResourceTypes';
 
 const App = () => {
   return (
@@ -53,16 +53,13 @@ const App = () => {
         </CollapsibleSection> */}
 
         <CollapsibleSection sectionTitle="Apps">
-          TODO: Scour Discord for apps
-          <ul>
-            <li>SOTA?</li>
-          </ul>
+          {Resources.apps.map((app: AppResource) => (app.render()))}
         </CollapsibleSection>
       </section>
 
       <section>
         <div className="footer">
-          Last updated <b>2026-06-12</b>; see&nbsp;
+          Last updated <b>2026-06-13</b>; see&nbsp;
           <a href='https://github.com/jdwilkinson/ObserverResources/commits/main/' target='_blank' rel='noopener noreferrer'>
             detailed changelog
           </a>.
