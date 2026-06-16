@@ -1,3 +1,9 @@
+:root {
+  --color-usau-maroon: #9d1535;
+  --color-usau-blue: #002344;
+  --animation-transition: 0.4s ease-out;
+}
+
 html,
 body,
 #root {
@@ -38,13 +44,6 @@ p {
   color: #334155;
 }
 
-.emoji-button {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-
 .click-to-collapse {
   filter: grayscale(1) opacity(0.4);
   color: white;
@@ -55,43 +54,6 @@ p {
   filter: grayscale(1) opacity(0.4);
   color: white;
   font-size: small;
-}
-
-
-.section-header {
-  /* USAU-logo maroon */
-  background-color: #9d1535;
-
-  color: white;
-  font-size: large;
-  font-weight: bold;
-  min-width: 400px;
-  min-height: 20px;
-  padding: 5px;
-  margin-top: 3px;
-  vertical-align: center;
-  border-left: 1px solid #9d1535;
-  border-right: 1px solid #9d1535;
-  border-top: 1px solid #9d1535;
-  border-radius: 1rem 1rem 0 0;
-
-  /* To align header and expand/collapse to the sides */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.section-content {
-  background-color: white;
-  color: black;
-  font-size: medium;
-  min-width: 400px;
-  padding: 5px;
-  margin-bottom: 3px;
-  border-left: 1px solid #9d1535;
-  border-right: 1px solid #9d1535;
-  border-bottom: 1px solid #9d1535;
-  border-radius: 0 0 1rem 1rem;
 }
 
 .resource-card {
@@ -110,4 +72,102 @@ p {
 
 .topmost-header {
   text-align: center;
+}
+
+/* Outermost CollapsibleSection wrapper; 
+   contains both header and content;
+   determines width but has no visible chrome */
+.collapsiblesection-container {
+  overflow: hidden;
+  min-width: 400px;
+  max-width: 600px;
+}
+
+/* Contains the header of the CollapsibleSection; 
+   always visible;
+   contains visible chrome (background color, borders) */
+.collapsiblesection-always-visible-header {
+  background-color: var(--color-usau-maroon);
+  border-left: 1px solid var(--color-usau-maroon);
+  border-right: 1px solid var(--color-usau-maroon);
+  border-top: 1px solid var(--color-usau-maroon);
+  border-radius: 1rem 1rem 0 0;
+
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  min-width: 400px;
+  min-height: 20px;
+  padding: 5px;
+  margin-top: 3px;
+  vertical-align: center;
+
+  /* To align header and expand/collapse to the sides */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Transition colors when opened */
+  transition: background-color var(--animation-transition), border-left var(--animation-transition), border-right var(--animation-transition), border-top var(--animation-transition);
+}
+
+/* Changes to be blue, when open */
+.collapsiblesection-always-visible-header.is-open {
+  background-color: var(--color-usau-blue);
+  border-left: 1px solid var(--color-usau-blue);
+  border-right: 1px solid var(--color-usau-blue);
+  border-top: 1px solid var(--color-usau-blue);
+}
+
+
+/* Wraps the content (not the header!) of the CollapsibleSection;
+  determines whether content is visible;
+  has no visible chrome */
+.collapsiblesection-contents-outer-wrapper {
+  display: grid;
+
+  /* Starts collapsed */
+  grid-template-rows: 0fr;
+
+  /* Animates the open/close of the CollapsibleSection */
+  transition: grid-template-rows 0.4s ease-out;
+}
+
+/* Expands to fit content, when open */
+.collapsiblesection-contents-outer-wrapper.is-open {
+  grid-template-rows: 1fr;
+}
+
+/* Another inner wrapper for the CollapsibleSection;
+   also determines whether content is visible;
+   also has no visible chrome */
+.collapsiblesection-contents-inner-wrapper {
+  min-height: 0;
+}
+
+/* Contains the actual content of the CollapsibleSection;
+   dictates styles of its content;
+   contains visible chrome (borders) */
+.collapsiblesection-content {
+  border-left: 1px solid var(--color-usau-maroon);
+  border-right: 1px solid var(--color-usau-maroon);
+  border-bottom: 1px solid var(--color-usau-maroon);
+  border-radius: 0 0 1rem 1rem;
+
+  background-color: white;
+  color: black;
+  font-size: medium;
+  min-width: 400px;
+  padding: 5px;
+  margin-bottom: 3px;
+
+  /* Transition colors when opened */
+  transition: border-left var(--animation-transition), border-right var(--animation-transition), border-bottom var(--animation-transition);
+}
+
+/* Changes to be blue, when open */
+.collapsiblesection-content.is-open {
+  border-left: 1px solid var(--color-usau-blue);
+  border-right: 1px solid var(--color-usau-blue);
+  border-bottom: 1px solid var(--color-usau-blue);
 }

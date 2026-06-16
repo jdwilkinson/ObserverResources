@@ -31,19 +31,22 @@ const CollapsibleSection = (props: { sectionTitle: string; children: React.React
 
     return (
         <>
-            <div className="section-header" onClick={onClick}>
-                <span>
-                    <span>{props.sectionTitle}</span>
-                    {getHeaderCountString()}
-                </span>
-                <span className="click-to-collapse">({getToggleVerb()} to {collapsed ? "expand" : "collapse"})</span>
-            </div>
-            {collapsed ?
-                <></> :
-                <div className="section-content">
-                    {props.children}
+            <div className="collapsiblesection-container"> {/* Outer wrapper */}
+                <div className={`collapsiblesection-always-visible-header ${!collapsed ? 'is-open' : ''}`} onClick={onClick}> {/* Section header, always visible */}
+                    <span>
+                        <span>{props.sectionTitle}</span>
+                        {getHeaderCountString()}
+                    </span>
+                    <span className="click-to-collapse">({getToggleVerb()} to {collapsed ? "expand" : "collapse"})</span>
                 </div>
-            }
+                <div className={`collapsiblesection-contents-outer-wrapper ${!collapsed ? 'is-open' : ''}`}> {/* Inner wrapper, can disappear */}
+                    <div className="collapsiblesection-contents-inner-wrapper"> {/* Another inner wrapper, can also disappear */}
+                        <div className={`collapsiblesection-content ${!collapsed ? 'is-open' : ''}`}> {/* Actual inner content */}
+                            {props.children}
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     );
 };
