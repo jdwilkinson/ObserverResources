@@ -5,7 +5,7 @@ import { App as AppResource, Book, Jersey, ObserverManual, ObserverUniversityVid
 const App = () => {
   return (
     <main>
-      <section>
+      <section className="main-section">
         <h1 className="topmost-header">Resources for observers</h1>
 
         <CollapsibleSection sectionTitle="Rules">
