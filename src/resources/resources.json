@@ -115,6 +115,28 @@
             "link": "https://www.youtube.com/watch?v=5ayEnILKlK4"
         }
     ],
+    "radios": [
+        {
+            "id": "radio-ejeas-v4",
+            "image": {
+                "sourceUrl": "/radios/radio-ejeas-v4.jpg",
+                "width": 200,
+                "height": 146
+            },
+            "description": "Ejeas V4",
+            "link": "https://www.amazon.com/EJEAS-Motorcycle-Bluetooth-Real-time-Simultaneously/dp/B09ZDYR5KG/"
+        },
+        {
+            "id": "radio-ejeas-v6",
+            "image": {
+                "sourceUrl": "/radios/radio-ejeas-v6.jpg",
+                "width": 200,
+                "height": 142
+            },
+            "description": "Ejeas V6",
+            "link": "https://www.amazon.com/EJEAS-Motorcycle-Bluetooth-Real-time-Simultaneously/dp/B07BPX8RH9/"
+        }
+    ],
     "rules": [
         {
             "id": "rules-usau",

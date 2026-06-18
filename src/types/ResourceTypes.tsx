@@ -31,6 +31,12 @@ export class ObserverUniversityVideo extends Resource {
     }
 }
 
+export class Radio extends Resource {
+    static createFromObject(obj: ResourceProperties): Radio {
+        return new Radio("Radio", obj);
+    }
+}
+
 export class Rules extends Resource {
     static createFromObject(obj: ResourceProperties): Rules {
         return new Rules("Rules", obj);

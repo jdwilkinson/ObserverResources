@@ -1,6 +1,6 @@
 import CollapsibleSection from './CollapsibleSection';
 import Resources from './resources/Resources';
-import { App as AppResource, Book, Jersey, ObserverManual, ObserverUniversityVideo, Rules, RulesQuiz, Scorecard, Shoe } from './types/ResourceTypes';
+import { App as AppResource, Book, Jersey, ObserverManual, ObserverUniversityVideo, Radio, Rules, RulesQuiz, Scorecard, Shoe } from './types/ResourceTypes';
 
 const App = () => {
   return (
@@ -34,6 +34,10 @@ const App = () => {
         {/* <CollapsibleSection sectionTitle="Apparel">
           ...
         </CollapsibleSection> */}
+
+        <CollapsibleSection sectionTitle="Radios">
+          {Resources.radios.map((radio: Radio) => (radio.render()))}
+        </CollapsibleSection>
 
         <CollapsibleSection sectionTitle="Observer University videos">
           {Resources.observerUniversityVideos.map((video: ObserverUniversityVideo) => (video.render()))}
