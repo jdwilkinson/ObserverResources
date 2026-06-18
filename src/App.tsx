@@ -8,6 +8,8 @@ const App = () => {
       <section className="main-section">
         <h1 className="topmost-header">Resources for observers</h1>
 
+        <hr className="hr-separator" />
+
         <CollapsibleSection sectionTitle="Rules">
           {Resources.rules.map((rule: Rules) => (rule.render()))}
         </CollapsibleSection>
@@ -63,7 +65,7 @@ const App = () => {
 
       <section>
         <div className="footer">
-          Last updated <b>2026-06-13</b>; see&nbsp;
+          Last updated <b>2026-06-17</b>; see&nbsp;
           <a href='https://github.com/jdwilkinson/ObserverResources/commits/main/' target='_blank' rel='noopener noreferrer'>
             detailed changelog
           </a>.

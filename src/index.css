@@ -17,23 +17,35 @@ body,
 
 body {
   font-family: system-ui, sans-serif;
-  background: #f5f7fb;
-  color: #111827;
+  background: lightgray;
+  color: #334155;
 }
 
 main {
-  display: grid;
-  min-height: 80vh;
-  min-height: 80dvh;
+  min-height: 100vh;
   place-items: center;
-  padding: 2rem;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (width >=768px) {
+  main {
+    padding: 2rem;
+  }
 }
 
 section {
   background: white;
   border-radius: 1rem;
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
-  padding: 0.5rem;
+  padding: 3px;
+  margin: 2px;
+}
+
+.main-section {
+  padding-bottom: 5px;
 }
 
 @media screen and (width < 768px) {
@@ -55,7 +67,7 @@ section {
 }
 
 h1 {
-  margin: 0 0 0.75rem;
+  margin: 0 0 0 0;
   font-size: clamp(2rem, 3vw, 2.75rem);
 }
 
@@ -68,7 +80,7 @@ p {
 .click-to-collapse {
   filter: grayscale(1) opacity(0.4);
   color: white;
-  font-size: small;
+  font-size: x-small;
 }
 
 .grayscale {
@@ -81,10 +93,20 @@ p {
   font-size: small;
   color: #334155;
   text-align: center;
+  padding: 8px;
 }
 
 .topmost-header {
   text-align: center;
+  text-wrap: nowrap;
+}
+
+.hr-separator {
+  border: none;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 /* Outermost CollapsibleSection wrapper; 
@@ -103,15 +125,14 @@ p {
   border-left: 1px solid var(--color-usau-maroon);
   border-right: 1px solid var(--color-usau-maroon);
   border-top: 1px solid var(--color-usau-maroon);
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 1rem 1rem 1rem 1rem;
 
   color: white;
-  font-size: large;
+  font-size: medium;
   font-weight: bold;
   min-height: 20px;
   padding: 5px;
   margin-top: 3px;
-  vertical-align: center;
 
   /* To align header and expand/collapse to the sides */
   display: flex;
@@ -128,6 +149,7 @@ p {
   border-left: 1px solid var(--color-usau-blue);
   border-right: 1px solid var(--color-usau-blue);
   border-top: 1px solid var(--color-usau-blue);
+  border-radius: 1rem 1rem 0 0;
 }
 
 
