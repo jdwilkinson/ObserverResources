@@ -44,19 +44,26 @@ abstract class Resource {
     public render(): JSX.Element {
         return (
             <div className="resource-card">
-                <a href={this.link} target="_blank" rel="noopener noreferrer">
-                    <img
-                        src={this.image.sourceUrl}
-                        width={this.image.width}
-                        height={this.image.height}
-                        alt={this.getImageAltText()}
-                        title={this.getImageAltText()}
-                    />
-                </a>
-                <p>
+                <div className="resource-card-image-container">
+                    {/* Image */}
+                    <a href={this.link} target="_blank" rel="noopener noreferrer">
+                        <img
+                            src={this.image.sourceUrl}
+                            alt={this.getImageAltText()}
+                            title={this.getImageAltText()}
+                            className="resource-card-image"
+                        />
+                    </a>
+                </div>
+
+                {/* Vertical line */}
+                <div className="resource-card-vertical-separator" />
+
+                {/* Description */}
+                <div className="resource-card-description">
                     {this.description}
                     {this.getPostDescriptionFooter()}
-                </p>
+                </div>
             </div>
         );
     }
