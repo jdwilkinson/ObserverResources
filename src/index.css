@@ -58,31 +58,44 @@ section {
   .resource-card {
     width: 100%;
   }
+
+  .collapsiblesection-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 /* When very wide, resources appear in three columns, with gaps between them.
-   The main section is 1050px wide, -6px padding, -2px border, -2px gap,yielding 1040px of usable width.
-   Each resource is 1040/3 == 346px wide. */
+   The main section is 1050px wide, and the three columns fill it equally. */
 @media screen and (1100px <=width) {
   .main-section {
     width: 1050px;
   }
 
   .resource-card {
-    width: 346px;
+    width: 100%;
+  }
+
+  .collapsiblesection-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 /* Between those two extremes, resources appear in two columns, with gaps between them.
-   The main section is 700px wide, -6px padding, -2px border, -1px gap, yielding 691px of usable width.
-   Each resource is 691/2 == 345px wide. */
+   The main section is 700 wide, and the two columns fill it equally. */
 @media screen and (1100px > width >=768px) {
   .main-section {
     width: 700px;
   }
 
   .resource-card {
-    width: 345px;
+    width: 100%;
+  }
+
+  .collapsiblesection-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -228,9 +241,6 @@ p {
     border-right var(--animation-transition),
     border-bottom var(--animation-transition),
     background-color var(--animation-transition);
-
-  display: flex;
-  flex-wrap: wrap;
 }
 
 /* Changes to be blue, when open */
@@ -259,6 +269,7 @@ p {
   width: 120px;
   flex: 0 0 auto;
   align-items: center;
+  justify-content: center;
   display: flex;
 }
 
