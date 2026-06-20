@@ -50,7 +50,7 @@
         {
             "id": "observer-manual-usau",
             "isOfficialUsauResource": true,
-            "imageSourceUrl": "/img/pdf-logo.png",
+            "imageSourceUrl": "/observer-manual/observer-manual-usau.png",
             "description": "USAU observer manual (PDF)",
             "link": "https://usaultimate.org/wp-content/uploads/2020/11/2024-Observer-Manual-2024-04-25.pdf"
         }
@@ -93,14 +93,14 @@
         {
             "id": "rules-usau",
             "isOfficialUsauResource": true,
-            "imageSourceUrl": "/img/usau-logo.svg",
+            "imageSourceUrl": "/rules/rules-usau-web.png",
             "description": "USAU rules (web)",
             "link": "https://usaultimate.org/rules/"
         },
         {
             "id": "rules-usau-pdf",
             "isOfficialUsauResource": true,
-            "imageSourceUrl": "/img/pdf-logo.png",
+            "imageSourceUrl": "/rules/rules-usau-pdf.png",
             "description": "USAU rules (PDF)",
             "link": "https://usaultimate.org/wp-content/uploads/2025/12/2026-27-Official-Rules-of-Ultimate.pdf"
         },
