@@ -2,6 +2,7 @@ export interface ResourceProperties {
     id: string;
     imageSourceUrl: string;
     description: string;
+    longDescription?: string;
     link: string;
     isOfficialUsauResource?: boolean;
     courtesyOf?: string;
@@ -12,9 +13,12 @@ abstract class Resource {
     protected id: string;
     protected imageSourceUrl: string;
     protected description: string;
+    protected longDescription: string;
     protected link: string;
     protected isOfficialUsauResource: boolean;
     protected courtesyOf: string;
+
+    private footerChips: JSX.Element[] = [];
 
     constructor(
         resourceType: string,
@@ -22,6 +26,7 @@ abstract class Resource {
             id,
             imageSourceUrl,
             description,
+            longDescription = '',
             link,
             isOfficialUsauResource = false,
             courtesyOf = '',
@@ -30,16 +35,19 @@ abstract class Resource {
         this.id = id;
         this.imageSourceUrl = imageSourceUrl;
         this.description = description;
+        this.longDescription = longDescription;
         this.link = link;
         this.isOfficialUsauResource = isOfficialUsauResource;
         this.courtesyOf = courtesyOf;
+
+        this.populateFooterChips();
     }
 
     public render(): JSX.Element {
         return (
             <div className="resource-card">
+                {/* Image */}
                 <div className="resource-card-image-container">
-                    {/* Image */}
                     <a href={this.link} target="_blank" rel="noopener noreferrer">
                         <img
                             src={this.imageSourceUrl}
@@ -53,10 +61,25 @@ abstract class Resource {
                 {/* Vertical line */}
                 <div className="resource-card-vertical-separator" />
 
-                {/* Description */}
-                <div className="resource-card-description">
-                    {this.description}
-                    {this.getPostDescriptionFooter()}
+                {/* Description area */}
+                <div className="resource-card-description-container">
+                    <div className="resource-card-description-title">
+                        {this.description}
+                    </div>
+                    <hr className="resource-card-horizontal-separator" />
+                    <div className="resource-card-long-description">
+                        {this.longDescription}
+                    </div>
+                    {this.footerChips.length > 0 ?
+                        <>
+                            <hr className="resource-card-horizontal-separator" />
+                            <div className="resource-card-footer">
+                                {this.footerChips}
+                            </div>
+                        </>
+                        :
+                        <></>
+                    }
                 </div>
             </div>
         );
@@ -72,29 +95,29 @@ abstract class Resource {
         return this.description;
     }
 
-    private getPostDescriptionFooter(): JSX.Element {
+    private populateFooterChips() {
         if (this.isOfficialUsauResource) {
-            return (<>
-                <br />
-                <img
-                    src='/img/usau-logo.svg'
-                    width='80'
-                    height='38'
-                    alt='Official USAU resource'
-                    title='Official USAU resource'
-                />
-            </>);
+            this.footerChips.push(
+                <div className="description-footer-chip footer-chip-yellow">
+                    <img
+                        src='/img/usau-logo.svg'
+                        width='30'
+                        alt='Official USAU resource'
+                        title='Official USAU resource'
+                    />
+                    &nbsp;
+                    <span>Official resource</span>
+                </div>
+            );
         }
+
         if (this.courtesyOf && this.courtesyOf.trim() !== '') {
-            return (<>
-                <br />
-                <small>
-                    <em>Courtesy of <b>{this.courtesyOf}</b>
-                    </em>
-                </small>
-            </>);
+            this.footerChips.push(
+                <div className="description-footer-chip footer-chip-purple">
+                    Courtesy of&nbsp;<b>{this.courtesyOf}</b>
+                </div>
+            );
         }
-        return (<></>);
     }
 }
 

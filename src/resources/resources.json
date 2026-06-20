@@ -118,6 +118,7 @@
             "isOfficialUsauResource": true,
             "imageSourceUrl": "/rules-quizzes/rules-quiz-usau.png",
             "description": "USAU college rules quiz",
+            "longDescription": "This was sent to teams prior to 2026 College Nationals.  It's relatively short and simple.",
             "link": "https://docs.google.com/forms/d/e/1FAIpQLSdGJ-G4_BF9gTRPCHvjkmRrc8ADFQAgUXWni6UgO0NOeFQYWQ/viewform"
         },
         {
@@ -162,7 +163,8 @@
         {
             "id": "shoes-speedcross",
             "imageSourceUrl": "/shoes/shoes-speedcross.png",
-            "description": "For those who prefer trail-runners over cleats, these seem to be the de-facto standard.  They're black, and come in men's, women's, wide, and Gore-Tex.",
+            "description": "Salomon SpeedCross",
+            "longDescription": "For those who prefer trail-runners over cleats, these seem to be the de-facto standard.  They're black, and come in men's, women's, wide, and Gore-Tex.",
             "link": "https://www.salomon.com/en-us/c/shoes/icons/speedcross/shopby/colors-black"
         }
     ]

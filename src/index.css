@@ -284,12 +284,67 @@ p {
   margin: 0 5px;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
   flex: 0 0 auto;
+  border: none;
 }
 
-.resource-card-description {
+.resource-card-horizontal-separator {
+  width: 100%;
+  height: 1px;
+  margin: 3px 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  flex: 0 0 auto;
+  border: none;
+}
+
+.resource-card-description-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.resource-card-description-title {
   font-size: small;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  flex: 0 0 auto;
+}
+
+.resource-card-long-description {
+  font-size: x-small;
   text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
   flex: 1 1 auto;
+  flex-grow: 1;
+}
+
+.resource-card-footer {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  flex: 0 0 auto;
+  font-size: x-small;
+  justify-content: center;
+}
+
+.description-footer-chip {
+  display: flex;
+  flex-direction: row;
+  font-size: x-small;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.6em;
+  padding: 1px;
+}
+
+.footer-chip-yellow {
+  border-color: darkgoldenrod;
+  background-color: lightyellow;
+}
+
+.footer-chip-purple {
+  border-color: purple;
+  background-color: plum;
 }
