@@ -1,22 +1,16 @@
 export interface ResourceProperties {
     id: string;
-    image: ResourceImage;
+    imageSourceUrl: string;
     description: string;
     link: string;
     isOfficialUsauResource?: boolean;
     courtesyOf?: string;
 }
 
-export type ResourceImage = {
-    sourceUrl: string;
-    width: number;
-    height: number;
-}
-
 abstract class Resource {
     protected resourceType: string;
     protected id: string;
-    protected image: ResourceImage;
+    protected imageSourceUrl: string;
     protected description: string;
     protected link: string;
     protected isOfficialUsauResource: boolean;
@@ -26,7 +20,7 @@ abstract class Resource {
         resourceType: string,
         {
             id,
-            image,
+            imageSourceUrl,
             description,
             link,
             isOfficialUsauResource = false,
@@ -34,7 +28,7 @@ abstract class Resource {
         }: ResourceProperties) {
         this.resourceType = resourceType;
         this.id = id;
-        this.image = image;
+        this.imageSourceUrl = imageSourceUrl;
         this.description = description;
         this.link = link;
         this.isOfficialUsauResource = isOfficialUsauResource;
@@ -48,7 +42,7 @@ abstract class Resource {
                     {/* Image */}
                     <a href={this.link} target="_blank" rel="noopener noreferrer">
                         <img
-                            src={this.image.sourceUrl}
+                            src={this.imageSourceUrl}
                             alt={this.getImageAltText()}
                             title={this.getImageAltText()}
                             className="resource-card-image"

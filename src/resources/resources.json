@@ -2,22 +2,14 @@
     "apps": [
         {
             "id": "app-sota",
-            "image": {
-                "sourceUrl": "/apps/app-sota.webp",
-                "width": 200,
-                "height": 200
-            },
+            "imageSourceUrl": "/apps/app-sota.webp",
             "description": "SOTA (Android)",
             "courtesyOf": "Jason R",
             "link": "https://play.google.com/store/apps/details?id=com.ultimateobservers.sota"
         },
         {
             "id": "app-ultiobserver",
-            "image": {
-                "sourceUrl": "/apps/app-ultiobserver.png",
-                "width": 200,
-                "height": 200
-            },
+            "imageSourceUrl": "/apps/app-ultiobserver.png",
             "description": "UltiObserver (Android)",
             "courtesyOf": "Mike J",
             "link": "https://github.com/rmjarvis/UltiObserver#installation"
@@ -26,11 +18,7 @@
     "books": [
         {
             "id": "book-social-ref",
-            "image": {
-                "sourceUrl": "/books/book-social-ref.jpg",
-                "width": 200,
-                "height": 200
-            },
+            "imageSourceUrl": "/books/book-social-ref.jpg",
             "description": "The Social Ref",
             "courtesyOf": "Zeta",
             "link": "https://www.amazon.com/Social-Ref-Become-Better-Referee/dp/1793133549"
@@ -40,32 +28,20 @@
         {
             "id": "jersey-short-orange",
             "isOfficialUsauResource": true,
-            "image": {
-                "sourceUrl": "/jerseys/jersey-short-orange.png",
-                "width": 165,
-                "height": 200
-            },
+            "imageSourceUrl": "/jerseys/jersey-short-orange.png",
             "description": "Official USAU orange jersey",
             "link": "https://www.spinultimate.com/collections/usa-ultimate-observer-jerseys/products/observer-short-sleeve-jersey-orange"
         },
         {
             "id": "jersey-short-green",
             "isOfficialUsauResource": true,
-            "image": {
-                "sourceUrl": "/jerseys/jersey-short-green.png",
-                "width": 159,
-                "height": 200
-            },
+            "imageSourceUrl": "/jerseys/jersey-short-green.png",
             "description": "Official USAU green jersey",
             "link": "https://www.spinultimate.com/collections/usa-ultimate-observer-jerseys/products/observer-short-sleeve-jersey-kelly"
         },
         {
             "id": "jersey-long-orange",
-            "image": {
-                "sourceUrl": "/jerseys/jersey-long-orange.png",
-                "width": 167,
-                "height": 200
-            },
+            "imageSourceUrl": "/jerseys/jersey-long-orange.png",
             "description": "Long-sleeve orange jersey",
             "link": "https://www.spinultimate.com/collections/usa-ultimate-observer-jerseys/products/observer-long-sleeve-jersey-orange"
         }
@@ -74,11 +50,7 @@
         {
             "id": "observer-manual-usau",
             "isOfficialUsauResource": true,
-            "image": {
-                "sourceUrl": "/img/pdf-logo.png",
-                "width": 158,
-                "height": 200
-            },
+            "imageSourceUrl": "/img/pdf-logo.png",
             "description": "USAU observer manual (PDF)",
             "link": "https://usaultimate.org/wp-content/uploads/2020/11/2024-Observer-Manual-2024-04-25.pdf"
         }
@@ -86,31 +58,19 @@
     "observerUniversityVideos": [
         {
             "id": "observer-university-1",
-            "image": {
-                "sourceUrl": "/observer-university/observer-university-1.png",
-                "width": 200,
-                "height": 183
-            },
+            "imageSourceUrl": "/observer-university/observer-university-1.png",
             "description": "Volume 1",
             "link": "https://www.youtube.com/watch?v=jEssYG0SwO8"
         },
         {
             "id": "observer-university-2",
-            "image": {
-                "sourceUrl": "/observer-university/observer-university-2.png",
-                "width": 200,
-                "height": 122
-            },
+            "imageSourceUrl": "/observer-university/observer-university-2.png",
             "description": "Volume 2",
             "link": "https://www.youtube.com/watch?v=HndetKAiOmE"
         },
         {
             "id": "observer-university-3",
-            "image": {
-                "sourceUrl": "/observer-university/observer-university-3.png",
-                "width": 200,
-                "height": 83
-            },
+            "imageSourceUrl": "/observer-university/observer-university-3.png",
             "description": "Volume 3",
             "link": "https://www.youtube.com/watch?v=5ayEnILKlK4"
         }
@@ -118,21 +78,13 @@
     "radios": [
         {
             "id": "radio-ejeas-v4",
-            "image": {
-                "sourceUrl": "/radios/radio-ejeas-v4.jpg",
-                "width": 200,
-                "height": 146
-            },
+            "imageSourceUrl": "/radios/radio-ejeas-v4.jpg",
             "description": "Ejeas V4",
             "link": "https://www.amazon.com/EJEAS-Motorcycle-Bluetooth-Real-time-Simultaneously/dp/B09ZDYR5KG/"
         },
         {
             "id": "radio-ejeas-v6",
-            "image": {
-                "sourceUrl": "/radios/radio-ejeas-v6.jpg",
-                "width": 200,
-                "height": 142
-            },
+            "imageSourceUrl": "/radios/radio-ejeas-v6.jpg",
             "description": "Ejeas V6",
             "link": "https://www.amazon.com/EJEAS-Motorcycle-Bluetooth-Real-time-Simultaneously/dp/B07BPX8RH9/"
         }
@@ -141,32 +93,20 @@
         {
             "id": "rules-usau",
             "isOfficialUsauResource": true,
-            "image": {
-                "sourceUrl": "/img/usau-logo.svg",
-                "width": 122,
-                "height": 200
-            },
+            "imageSourceUrl": "/img/usau-logo.svg",
             "description": "USAU rules (web)",
             "link": "https://usaultimate.org/rules/"
         },
         {
             "id": "rules-usau-pdf",
             "isOfficialUsauResource": true,
-            "image": {
-                "sourceUrl": "/img/pdf-logo.png",
-                "width": 158,
-                "height": 200
-            },
+            "imageSourceUrl": "/img/pdf-logo.png",
             "description": "USAU rules (PDF)",
             "link": "https://usaultimate.org/wp-content/uploads/2025/12/2026-27-Official-Rules-of-Ultimate.pdf"
         },
         {
             "id": "dynamic-rules",
-            "image": {
-                "sourceUrl": "/rules/rules-dynamic.png",
-                "width": 200,
-                "height": 119
-            },
+            "imageSourceUrl": "/rules/rules-dynamic.png",
             "description": "Dynamic rules",
             "courtesyOf": "Austin",
             "link": "https://afbcary.github.io/regula_nexus/"
@@ -176,21 +116,13 @@
         {
             "id": "rules-quiz-usau",
             "isOfficialUsauResource": true,
-            "image": {
-                "sourceUrl": "/rules-quizzes/rules-quiz-usau.png",
-                "width": 200,
-                "height": 75
-            },
+            "imageSourceUrl": "/rules-quizzes/rules-quiz-usau.png",
             "description": "USAU college rules quiz",
             "link": "https://docs.google.com/forms/d/e/1FAIpQLSdGJ-G4_BF9gTRPCHvjkmRrc8ADFQAgUXWni6UgO0NOeFQYWQ/viewform"
         },
         {
             "id": "rules-quiz-cotton",
-            "image": {
-                "sourceUrl": "/rules-quizzes/rules-quiz-cotton.png",
-                "width": 200,
-                "height": 97
-            },
+            "imageSourceUrl": "/rules-quizzes/rules-quiz-cotton.png",
             "description": "Cotton's rules quiz",
             "courtesyOf": "Cotton",
             "link": "https://docs.google.com/forms/d/e/1FAIpQLSfoOE97ZO3hYOoVHLQXwuXoEOHmofdJbqfedIyZGFq3F_wQQg/viewform"
@@ -200,43 +132,27 @@
         {
             "id": "scorecard-usau",
             "isOfficialUsauResource": true,
-            "image": {
-                "sourceUrl": "/scorecards/scorecard-usau.png",
-                "width": 122,
-                "height": 200
-            },
+            "imageSourceUrl": "/scorecards/scorecard-usau.png",
             "description": "Official USAU scorecard",
             "link": "/scorecards/scorecard-usau.pdf"
         },
         {
             "id": "scorecard-zeta",
-            "image": {
-                "sourceUrl": "/scorecards/scorecard-zeta.png",
-                "width": 127,
-                "height": 200
-            },
+            "imageSourceUrl": "/scorecards/scorecard-zeta.png",
             "description": "Horizontal with ABBA",
             "courtesyOf": "Zeta",
             "link": "/scorecards/scorecard-zeta.pdf"
         },
         {
             "id": "scorecard-wally",
-            "image": {
-                "sourceUrl": "/scorecards/scorecard-wally.png",
-                "width": 200,
-                "height": 200
-            },
+            "imageSourceUrl": "/scorecards/scorecard-wally.png",
             "description": "Vertical with ABBA",
             "courtesyOf": "Wally",
             "link": "https://docs.google.com/spreadsheets/d/1F3vDwuCvAQZUAxPEUgbfK8jgJqbMTcb0QkCB3ra74_0/edit?gid=483502455#gid=483502455"
         },
         {
             "id": "scorecard-joey",
-            "image": {
-                "sourceUrl": "/scorecards/scorecard-joey.png",
-                "width": 158,
-                "height": 200
-            },
+            "imageSourceUrl": "/scorecards/scorecard-joey.png",
             "description": "Vertical with shading",
             "courtesyOf": "Joey",
             "link": "/scorecards/scorecard-joey.pdf"
@@ -245,11 +161,7 @@
     "shoes": [
         {
             "id": "shoes-speedcross",
-            "image": {
-                "sourceUrl": "/shoes/shoes-speedcross.png",
-                "width": 200,
-                "height": 170
-            },
+            "imageSourceUrl": "/shoes/shoes-speedcross.png",
             "description": "For those who prefer trail-runners over cleats, these seem to be the de-facto standard.  They're black, and come in men's, women's, wide, and Gore-Tex.",
             "link": "https://www.salomon.com/en-us/c/shoes/icons/speedcross/shopby/colors-black"
         }
