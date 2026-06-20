@@ -336,7 +336,10 @@ p {
   border-width: 1px;
   border-style: solid;
   border-radius: 0.6em;
-  padding: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .footer-chip-yellow {
@@ -347,4 +350,29 @@ p {
 .footer-chip-purple {
   border-color: purple;
   background-color: plum;
+}
+
+.footer-chip-red {
+  border-color: red;
+  background-color: pink;
+}
+
+.footer-chip-green {
+  border-color: green;
+  background-color: lightgreen;
+}
+
+.footer-chip-blue {
+  border-color: blue;
+  background-color: lightskyblue;
+}
+
+.footer-chip-orange {
+  border-color: orange;
+  background-color: lightgoldenrodyellow;
+}
+
+.footer-chip-white {
+  border-color: black;
+  background-color: lightgray;
 }

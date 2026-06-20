@@ -1,3 +1,22 @@
+type ResourceFormat = 'YouTube' | 'GoogleDoc' | 'GoogleForm' | 'WebLink' | 'Amazon' | 'PDF';
+
+const formatToClassNameMap: Record<ResourceFormat, string> = {
+    'YouTube': 'footer-chip-red',
+    'GoogleDoc': 'footer-chip-green',
+    'GoogleForm': 'footer-chip-purple',
+    'WebLink': 'footer-chip-blue',
+    'Amazon': 'footer-chip-orange',
+    'PDF': 'footer-chip-red',
+}
+const formatToTextMap: Record<ResourceFormat, string> = {
+    'YouTube': 'YouTube video',
+    'GoogleDoc': 'Google Doc',
+    'GoogleForm': 'Google Form',
+    'WebLink': 'Web link',
+    'Amazon': 'Amazon product',
+    'PDF': 'PDF',
+}
+
 export interface ResourceProperties {
     id: string;
     imageSourceUrl: string;
@@ -6,6 +25,7 @@ export interface ResourceProperties {
     link: string;
     isOfficialUsauResource?: boolean;
     courtesyOf?: string;
+    resourceFormat: string;
 }
 
 abstract class Resource {
@@ -17,6 +37,7 @@ abstract class Resource {
     protected link: string;
     protected isOfficialUsauResource: boolean;
     protected courtesyOf: string;
+    protected resourceFormat?: ResourceFormat;
 
     private footerChips: JSX.Element[] = [];
 
@@ -30,6 +51,7 @@ abstract class Resource {
             link,
             isOfficialUsauResource = false,
             courtesyOf = '',
+            resourceFormat
         }: ResourceProperties) {
         this.resourceType = resourceType;
         this.id = id;
@@ -39,6 +61,7 @@ abstract class Resource {
         this.link = link;
         this.isOfficialUsauResource = isOfficialUsauResource;
         this.courtesyOf = courtesyOf;
+        this.resourceFormat = resourceFormat as ResourceFormat;
 
         this.populateFooterChips();
     }
@@ -96,8 +119,11 @@ abstract class Resource {
     }
 
     private populateFooterChips() {
+        // Note that order matters for these!
+        let tempChips: JSX.Element[] = [];
+
         if (this.isOfficialUsauResource) {
-            this.footerChips.push(
+            tempChips.push(
                 <div className="description-footer-chip footer-chip-yellow">
                     <img
                         src='/img/usau-logo.svg'
@@ -111,12 +137,26 @@ abstract class Resource {
             );
         }
 
+        if (this.resourceFormat) {
+            tempChips.push(
+                <div className={`description-footer-chip ${formatToClassNameMap[this.resourceFormat]}`}>
+                    {formatToTextMap[this.resourceFormat]}
+                </div>
+            );
+        }
+
         if (this.courtesyOf && this.courtesyOf.trim() !== '') {
-            this.footerChips.push(
-                <div className="description-footer-chip footer-chip-purple">
+            tempChips.push(
+                <div className="description-footer-chip footer-chip-white">
                     Courtesy of&nbsp;<b>{this.courtesyOf}</b>
                 </div>
             );
+        }
+
+        // Space them out
+        for (let i = 0; i < tempChips.length; i++) {
+            if (i > 0) this.footerChips.push(<span>&nbsp;</span>);
+            this.footerChips.push(tempChips[i]);
         }
     }
 }
