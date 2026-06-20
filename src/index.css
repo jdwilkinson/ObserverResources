@@ -264,6 +264,11 @@ p {
   border-radius: 1rem;
 }
 
+.resource-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .resource-card-image-container {
   height: 120px;
   width: 120px;

@@ -87,11 +87,15 @@ abstract class Resource {
                 {/* Description area */}
                 <div className="resource-card-description-container">
                     <div className="resource-card-description-title">
-                        {this.description}
+                        <a href={this.link} target="_blank" rel="noopener noreferrer" className="resource-link">
+                            {this.description}
+                        </a>
                     </div>
                     <hr className="resource-card-horizontal-separator" />
                     <div className="resource-card-long-description">
-                        {this.longDescription}
+                        <a href={this.link} target="_blank" rel="noopener noreferrer" className="resource-link">
+                            {this.longDescription}
+                        </a>
                     </div>
                     {this.footerChips.length > 0 ?
                         <>
