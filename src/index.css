@@ -150,6 +150,8 @@ p {
   color: white;
   font-size: medium;
   font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: transparent;
   min-height: 20px;
   padding: 5px;
   margin-top: 3px;
@@ -165,7 +167,8 @@ p {
     border-left var(--animation-transition),
     border-right var(--animation-transition),
     border-top var(--animation-transition),
-    border-radius var(--animation-transition);
+    border-radius var(--animation-transition),
+    text-decoration-color var(--animation-transition);
 }
 
 /* Changes to be blue, when open */
@@ -175,6 +178,7 @@ p {
   border-right: 1px solid var(--color-usau-blue);
   border-top: 1px solid var(--color-usau-blue);
   border-radius: 1rem 1rem 0 0;
+  text-decoration-color: white;
 }
 
 
