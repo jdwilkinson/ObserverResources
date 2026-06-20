@@ -24,8 +24,6 @@ const App = () => {
 
         <CollapsibleSection sectionTitle="Scorecards">
           {Resources.scorecards.map((sc: Scorecard) => (sc.render()))}
-
-          {/* TODO: Add Wally's vertical scorecard */}
         </CollapsibleSection>
 
         <CollapsibleSection sectionTitle="Shoes">
