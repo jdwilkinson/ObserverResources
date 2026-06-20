@@ -220,6 +220,17 @@
             "link": "/scorecards/scorecard-zeta.pdf"
         },
         {
+            "id": "scorecard-wally",
+            "image": {
+                "sourceUrl": "/scorecards/scorecard-wally.png",
+                "width": 200,
+                "height": 200
+            },
+            "description": "Vertical with ABBA",
+            "courtesyOf": "Wally",
+            "link": "https://docs.google.com/spreadsheets/d/1F3vDwuCvAQZUAxPEUgbfK8jgJqbMTcb0QkCB3ra74_0/edit?gid=483502455#gid=483502455"
+        },
+        {
             "id": "scorecard-joey",
             "image": {
                 "sourceUrl": "/scorecards/scorecard-joey.png",
