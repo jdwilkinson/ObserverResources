@@ -20,8 +20,8 @@ const formatToTextMap: Record<ResourceFormat, string> = {
 export interface ResourceProperties {
     id: string;
     imageSourceUrl: string;
-    description: string;
-    longDescription?: string;
+    title: string;
+    description?: string;
     link: string;
     isOfficialUsauResource?: boolean;
     courtesyOf?: string;
@@ -32,8 +32,8 @@ abstract class Resource {
     protected resourceType: string;
     protected id: string;
     protected imageSourceUrl: string;
+    protected title: string;
     protected description: string;
-    protected longDescription: string;
     protected link: string;
     protected isOfficialUsauResource: boolean;
     protected courtesyOf: string;
@@ -46,8 +46,8 @@ abstract class Resource {
         {
             id,
             imageSourceUrl,
-            description,
-            longDescription = '',
+            title,
+            description = '',
             link,
             isOfficialUsauResource = false,
             courtesyOf = '',
@@ -56,8 +56,8 @@ abstract class Resource {
         this.resourceType = resourceType;
         this.id = id;
         this.imageSourceUrl = imageSourceUrl;
+        this.title = title;
         this.description = description;
-        this.longDescription = longDescription;
         this.link = link;
         this.isOfficialUsauResource = isOfficialUsauResource;
         this.courtesyOf = courtesyOf;
@@ -88,13 +88,13 @@ abstract class Resource {
                 <div className="resource-card-description-container">
                     <div className="resource-card-description-title">
                         <a href={this.link} target="_blank" rel="noopener noreferrer" className="resource-link">
-                            {this.description}
+                            {this.title}
                         </a>
                     </div>
                     <hr className="resource-card-horizontal-separator" />
                     <div className="resource-card-long-description">
                         <a href={this.link} target="_blank" rel="noopener noreferrer" className="resource-link">
-                            {this.longDescription}
+                            {this.description}
                         </a>
                     </div>
                     {this.footerChips.length > 0 ?
@@ -119,7 +119,7 @@ abstract class Resource {
         if (this.courtesyOf.trim() !== '') {
             return `${this.resourceType} courtesy of ${this.courtesyOf}`;
         }
-        return this.description;
+        return this.title;
     }
 
     private populateFooterChips() {
