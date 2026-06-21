@@ -6,7 +6,7 @@ const formatToClassNameMap: Record<ResourceFormat, string> = {
     'GoogleForm': 'footer-chip-purple',
     'WebLink': 'footer-chip-blue',
     'Amazon': 'footer-chip-orange',
-    'PDF': 'footer-chip-red',
+    'PDF': 'footer-chip-darkred',
 }
 const formatToTextMap: Record<ResourceFormat, string> = {
     'YouTube': 'YouTube video',
@@ -128,7 +128,7 @@ abstract class Resource {
 
         if (this.isOfficialUsauResource) {
             tempChips.push(
-                <div className="description-footer-chip footer-chip-yellow">
+                <div className="description-footer-chip footer-chip-official-usau-resource">
                     <img
                         src='/img/usau-logo.svg'
                         width='30'
@@ -136,7 +136,7 @@ abstract class Resource {
                         title='Official USAU resource'
                     />
                     &nbsp;
-                    <span>Official resource</span>
+                    <span><b>Official resource</b></span>
                 </div>
             );
         }
@@ -152,7 +152,7 @@ abstract class Resource {
         if (this.courtesyOf && this.courtesyOf.trim() !== '') {
             tempChips.push(
                 <div className="description-footer-chip footer-chip-white">
-                    Courtesy of&nbsp;<b>{this.courtesyOf}</b>
+                    <em>Courtesy of&nbsp;<b>{this.courtesyOf}</b></em>
                 </div>
             );
         }

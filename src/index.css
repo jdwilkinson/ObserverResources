@@ -347,37 +347,50 @@ p {
   padding-right: 4px;
 }
 
-.footer-chip-yellow {
+.footer-chip-official-usau-resource {
   border-color: darkgoldenrod;
+  color: black;
   background-color: lightyellow;
 }
 
 .footer-chip-purple {
   border-color: purple;
+  color: purple;
   background-color: plum;
+}
+
+.footer-chip-darkred {
+  border-color: darkred;
+  color: darkred;
+  background-color: pink;
 }
 
 .footer-chip-red {
   border-color: red;
+  color: red;
   background-color: pink;
 }
 
 .footer-chip-green {
   border-color: green;
+  color: green;
   background-color: lightgreen;
 }
 
 .footer-chip-blue {
   border-color: blue;
+  color: blue;
   background-color: lightskyblue;
 }
 
 .footer-chip-orange {
-  border-color: orange;
+  border-color: darkorange;
+  color: darkorange;
   background-color: lightgoldenrodyellow;
 }
 
 .footer-chip-white {
-  border-color: black;
-  background-color: lightgray;
+  border-color: dimgray;
+  color: dimgray;
+  background-color: silver;
 }
