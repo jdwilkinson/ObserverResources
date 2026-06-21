@@ -168,7 +168,7 @@
             "isOfficialUsauResource": true,
             "imageSourceUrl": "/scorecards/scorecard-usau.png",
             "title": "Official USAU scorecard",
-            "description": "The scorecard contained in the observer manual; technically the 'official' observer scorecard'.",
+            "description": "The scorecard contained in the observer manual; technically the 'official' observer scorecard.",
             "link": "/scorecards/scorecard-usau.pdf",
             "resourceFormat": "PDF"
         },
