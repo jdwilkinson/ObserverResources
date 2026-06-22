@@ -1,6 +1,6 @@
 # Observer Resources
 
-This repo contains the code to serve https://www.observer-resources.com, which contains an **unofficial** listing of resources that are useful for USAU-certified [observers](https://usaultimate.org/observers).  The intention is that this site accepts new resources from the community, and is updated frequently.
+This repo contains the code to serve https://observer-resources.com, which contains an **unofficial** listing of resources that are useful for USAU-certified [observers](https://usaultimate.org/observers).  The intention is that this site accepts new resources from the community, and is updated frequently.
 
 ## Resource listing
 
