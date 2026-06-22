@@ -136,7 +136,7 @@ abstract class Resource {
                         title='Official USAU resource'
                     />
                     &nbsp;
-                    <span><b>Official resource</b></span>
+                    Official resource
                 </div>
             );
         }

@@ -351,6 +351,7 @@ p {
   border-color: darkgoldenrod;
   color: black;
   background-color: lightyellow;
+  font-weight: bold;
 }
 
 .footer-chip-purple {
