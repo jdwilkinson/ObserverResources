@@ -1,6 +1,6 @@
 import CollapsibleSection from './CollapsibleSection';
 import Resources from './resources/Resources';
-import { App as AppResource, Book, Jersey, ObserverManual, ObserverUniversityVideo, Radio, Rules, RulesQuiz, Scorecard, Shoe } from './types/ResourceTypes';
+import { App as AppResource, Book, Jersey, ObserverManual, ObserverUniversityVideo, Radio, Rules, RulesClinic, RulesQuiz, Scorecard, Shoe } from './types/ResourceTypes';
 
 const App = () => {
   return (
@@ -49,6 +49,10 @@ const App = () => {
 
         <CollapsibleSection sectionTitle="Rules quizzes">
           {Resources.rulesQuizzes.map((quiz: RulesQuiz) => (quiz.render()))}
+        </CollapsibleSection>
+
+        <CollapsibleSection sectionTitle="Rules clinics">
+          {Resources.rulesClinics.map((clinic: RulesClinic) => (clinic.render()))}
         </CollapsibleSection>
 
         {/* TODO: Consider whether this is the right place to put video resources */}

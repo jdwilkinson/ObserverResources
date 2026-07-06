@@ -43,6 +43,12 @@ export class Rules extends Resource {
     }
 }
 
+export class RulesClinic extends Resource {
+    static createFromObject(obj: ResourceProperties): RulesClinic {
+        return new RulesClinic("Rules clinic", obj);
+    }
+}
+
 export class RulesQuiz extends Resource {
     static createFromObject(obj: ResourceProperties): RulesQuiz {
         return new RulesQuiz("Rules quiz", obj);

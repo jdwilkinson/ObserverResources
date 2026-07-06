@@ -1,9 +1,10 @@
-type ResourceFormat = 'YouTube' | 'GoogleDoc' | 'GoogleForm' | 'WebLink' | 'Amazon' | 'PDF';
+type ResourceFormat = 'YouTube' | 'GoogleDoc' | 'GoogleForm' | 'GoogleSlides' | 'WebLink' | 'Amazon' | 'PDF';
 
 const formatToClassNameMap: Record<ResourceFormat, string> = {
     'YouTube': 'footer-chip-red',
     'GoogleDoc': 'footer-chip-green',
     'GoogleForm': 'footer-chip-purple',
+    'GoogleSlides': 'footer-chip-yellow',
     'WebLink': 'footer-chip-blue',
     'Amazon': 'footer-chip-orange',
     'PDF': 'footer-chip-darkred',
@@ -12,6 +13,7 @@ const formatToTextMap: Record<ResourceFormat, string> = {
     'YouTube': 'YouTube video',
     'GoogleDoc': 'Google Doc',
     'GoogleForm': 'Google Form',
+    'GoogleSlides': 'Google Slides',
     'WebLink': 'Web link',
     'Amazon': 'Amazon product',
     'PDF': 'PDF',

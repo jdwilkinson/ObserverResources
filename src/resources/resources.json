@@ -142,6 +142,17 @@
             "resourceFormat": "WebLink"
         }
     ],
+    "rulesClinics": [
+        {
+            "id": "rules-clinic-discnw",
+            "imageSourceUrl": "/rules-clinics/rules-clinic-discnw.png",
+            "title": "Rules clinic",
+            "description": "Developed by DiscNW, this slide deck is suitable for presenting to league players.  It provides an intermediate overview of commonly-encountered rules situations.",
+            "courtesyOf": "DiscNW",
+            "link": "https://docs.google.com/presentation/d/16MCQM4GuojSA_mFl1BBbsgSacZ9mFjTxQFjuvnxEsLw/edit",
+            "resourceFormat": "GoogleSlides"
+        }
+    ],
     "rulesQuizzes": [
         {
             "id": "rules-quiz-usau",

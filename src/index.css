@@ -360,6 +360,12 @@ p {
   background-color: plum;
 }
 
+.footer-chip-yellow {
+  border-color: darkgoldenrod;
+  color: darkgoldenrod;
+  background-color: yellow;
+}
+
 .footer-chip-darkred {
   border-color: darkred;
   color: darkred;
