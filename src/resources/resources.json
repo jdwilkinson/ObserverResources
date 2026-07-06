@@ -175,16 +175,25 @@
         {
             "id": "scorecard-zeta",
             "imageSourceUrl": "/scorecards/scorecard-zeta.png",
-            "title": "Horizontal with ABBA",
+            "title": "Horizontal 1",
             "description": "A horizontally-oriented scorecard, with slots to track ABBA gender-matching.",
             "courtesyOf": "Zeta",
             "link": "/scorecards/scorecard-zeta.pdf",
             "resourceFormat": "PDF"
         },
         {
+            "id": "scorecard-janna",
+            "imageSourceUrl": "/scorecards/scorecard-janna.png",
+            "title": "Horizontal 2",
+            "description": "Another horizontally-oriented scorecard, with larger score boxes; also has ABBA tracking slots.",
+            "courtesyOf": "Janna",
+            "link": "/scorecards/scorecard-janna.pdf",
+            "resourceFormat": "PDF"
+        },
+        {
             "id": "scorecard-wally",
             "imageSourceUrl": "/scorecards/scorecard-wally.png",
-            "title": "Vertical with ABBA",
+            "title": "Vertical 1",
             "description": "A vertically-oriented scorecard, also with ABBA tracking slots.",
             "courtesyOf": "Wally",
             "link": "https://docs.google.com/spreadsheets/d/1F3vDwuCvAQZUAxPEUgbfK8jgJqbMTcb0QkCB3ra74_0/edit?gid=483502455#gid=483502455",
@@ -193,8 +202,8 @@
         {
             "id": "scorecard-joey",
             "imageSourceUrl": "/scorecards/scorecard-joey.png",
-            "title": "Vertical with shading",
-            "description": "Another vertical scorecard, with shading to help differentiate light and dark at a glance.",
+            "title": "Vertical 2",
+            "description": "Another vertical scorecard, with shading to help differentiate light/dark and ABBA tracking at a glance.",
             "courtesyOf": "Joey",
             "link": "/scorecards/scorecard-joey.pdf",
             "resourceFormat": "PDF"
