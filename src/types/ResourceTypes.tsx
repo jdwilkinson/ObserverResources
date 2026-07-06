@@ -13,6 +13,12 @@ export class Book extends Resource {
     }
 }
 
+export class HeadObserverTool extends Resource {
+    static createFromObject(obj: ResourceProperties): HeadObserverTool {
+        return new HeadObserverTool("Head Observer Tool", obj);
+    }
+}
+
 export class Jersey extends Resource {
     static createFromObject(obj: ResourceProperties): Jersey {
         return new Jersey("Jersey", obj);

@@ -30,6 +30,17 @@
             "resourceFormat": "Amazon"
         }
     ],
+    "headObserverTools": [
+        {
+            "id": "ho-tool-games-tables",
+            "imageSourceUrl": "/head-observer-tools/ho-tool-games-tables.png",
+            "title": "Game & Time Tables",
+            "description": "A web-based tool that generates tables of games and cap times for a given tournament.  Useful when drawing up an observer schedule.",
+            "courtesyOf": "Austin",
+            "link": "https://afbcary.github.io/obs-shep/",
+            "resourceFormat": "WebLink"
+        }
+    ],
     "jerseys": [
         {
             "id": "jersey-short-orange",

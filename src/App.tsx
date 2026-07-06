@@ -1,6 +1,6 @@
 import CollapsibleSection from './CollapsibleSection';
 import Resources from './resources/Resources';
-import { App as AppResource, Book, Jersey, ObserverManual, ObserverUniversityVideo, Radio, Rules, RulesClinic, RulesQuiz, Scorecard, Shoe } from './types/ResourceTypes';
+import { App as AppResource, Book, HeadObserverTool, Jersey, ObserverManual, ObserverUniversityVideo, Radio, Rules, RulesClinic, RulesQuiz, Scorecard, Shoe } from './types/ResourceTypes';
 
 const App = () => {
   return (
@@ -58,10 +58,14 @@ const App = () => {
         {/* TODO: Consider whether this is the right place to put video resources */}
         {/* <CollapsibleSection sectionTitle="Video replays">
           ...
-        </CollapsibleSection> */}
+          </CollapsibleSection> */}
 
         <CollapsibleSection sectionTitle="Apps">
           {Resources.apps.map((app: AppResource) => (app.render()))}
+        </CollapsibleSection>
+
+        <CollapsibleSection sectionTitle="Head Observer Tools">
+          {Resources.headObserverTools.map((tool: HeadObserverTool) => (tool.render()))}
         </CollapsibleSection>
       </section>
 
