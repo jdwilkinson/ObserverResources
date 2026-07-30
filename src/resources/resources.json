@@ -222,6 +222,15 @@
             "resourceFormat": "PDF"
         },
         {
+            "id": "scorecard-dylan",
+            "imageSourceUrl": "/scorecards/scorecard-dylan.png",
+            "title": "Horizontal 3",
+            "description": "Another horizontal scorecard, with a different aspect ratio, larger scoreboxes, and a unique way to keep track of ABBA ratios.",
+            "courtesyOf": "Dylan",
+            "link": "/scorecards/scorecard-dylan.pdf",
+            "resourceFormat": "PDF"
+        },
+        {
             "id": "scorecard-wally",
             "imageSourceUrl": "/scorecards/scorecard-wally.png",
             "title": "Vertical 1",
