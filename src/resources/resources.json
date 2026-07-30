@@ -151,6 +151,14 @@
             "courtesyOf": "Austin",
             "link": "https://afbcary.github.io/regula_nexus/",
             "resourceFormat": "WebLink"
+        },
+        {
+            "id": "rules-best-perspective",
+            "imageSourceUrl": "/rules/rules-best-perspective.png",
+            "title": "Best Perspective",
+            "description": "Another web-based version of the rules, with good searchability.  Created by a non-observer.",
+            "link": "https://usaurules.com/rules/usau-official-2026-27",
+            "resourceFormat": "WebLink"
         }
     ],
     "rulesClinics": [
