@@ -190,6 +190,14 @@
             "courtesyOf": "Cotton",
             "link": "https://docs.google.com/forms/d/e/1FAIpQLSfoOE97ZO3hYOoVHLQXwuXoEOHmofdJbqfedIyZGFq3F_wQQg/viewform",
             "resourceFormat": "GoogleForm"
+        },
+        {
+            "id": "rules-quiz-best-perspective",
+            "imageSourceUrl": "/rules-quizzes/rules-quiz-best-perspective.png",
+            "title": "'Best Perspective' rules quiz",
+            "description": "A set of rules quizzes created by a non-observer.  Has randomized, per-section, scenario-based, and timed modes.  Created largely by AI; may contain a few mistakes.",
+            "link": "https://usaurules.com/quiz",
+            "resourceFormat": "WebLink"
         }
     ],
     "scorecards": [
