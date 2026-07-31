@@ -244,6 +244,25 @@
             "resourceFormat": "PDF"
         },
         {
+            "id": "scorecard-yearout",
+            "imageSourceUrl": "/scorecards/scorecard-yearout.png",
+            "title": "Horizontal 4",
+            "description": "Yet another horizontal scorecard, with another unique way to track ABBA ratios.",
+            "alternateVersions": [
+                {
+                    "title": "4/sheet",
+                    "link": "/scorecards/scorecard-yearout-4.pdf"
+                },
+                {
+                    "title": "Quick reference",
+                    "link": "/scorecards/scorecard-yearout-quick-reference.pdf"
+                }
+            ],
+            "courtesyOf": "Jason Y",
+            "link": "/scorecards/scorecard-yearout-2.pdf",
+            "resourceFormat": "PDF"
+        },
+        {
             "id": "scorecard-wally",
             "imageSourceUrl": "/scorecards/scorecard-wally.png",
             "title": "Vertical 1",
