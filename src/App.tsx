@@ -72,7 +72,7 @@ const App = () => {
       <section>
         <div className="footer">
           Last updated <b>2026-07-03</b>; see&nbsp;
-          <a href='https://github.com/jdwilkinson/ObserverResources/commits/main/' target='_blank' rel='noopener noreferrer'>
+          <a href='https://github.com/jdwilkinson/ObserverResources/commits/main/' target='_blank'>
             detailed changelog
           </a>.
           <br />

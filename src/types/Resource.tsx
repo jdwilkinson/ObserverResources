@@ -82,7 +82,7 @@ abstract class Resource {
             <div className="resource-card">
                 {/* Image */}
                 <div className="resource-card-image-container">
-                    <a href={this.link} target="_blank" rel="noopener noreferrer">
+                    <a href={this.link} target="_blank">
                         <img
                             src={this.imageSourceUrl}
                             alt={this.getImageAltText()}
@@ -98,13 +98,13 @@ abstract class Resource {
                 {/* Description area */}
                 <div className="resource-card-description-container">
                     <div className="resource-card-description-title">
-                        <a href={this.link} target="_blank" rel="noopener noreferrer" className="resource-link">
+                        <a href={this.link} target="_blank" className="resource-link">
                             {this.title}
                         </a>
                     </div>
                     <hr className="resource-card-horizontal-separator" />
                     <div className="resource-card-long-description">
-                        <a href={this.link} target="_blank" rel="noopener noreferrer" className="resource-link">
+                        <a href={this.link} target="_blank" className="resource-link">
                             {this.description}
                         </a>
                         {this.alternateVersions.length > 0 ?
@@ -115,7 +115,7 @@ abstract class Resource {
                                 {this.alternateVersions.map((version, index) => (
                                     <span key={index}>
                                         {index > 0 && ', '}
-                                        <a href={version.link} target="_blank" rel="noopener noreferrer">
+                                        <a href={version.link} target="_blank">
                                             {version.title}
                                         </a>
                                     </span>
