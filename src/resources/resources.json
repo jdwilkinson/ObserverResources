@@ -224,17 +224,14 @@
             "imageSourceUrl": "/scorecards/scorecard-janna.png",
             "title": "Horizontal 2",
             "description": "Another horizontally-oriented scorecard, with larger score boxes; also has ABBA tracking slots.",
+            "alternateVersions": [
+                {
+                    "title": "Wallet-sized",
+                    "link": "/scorecards/scorecard-janna.pdf"
+                }
+            ],
             "courtesyOf": "Janna",
             "link": "/scorecards/scorecard-janna-2x2.pdf",
-            "resourceFormat": "PDF"
-        },
-        {
-            "id": "scorecard-janna-wallet",
-            "imageSourceUrl": "/scorecards/scorecard-janna.png",
-            "title": "Horizontal 2 - Wallet-sized",
-            "description": "A slightly different proportion of the 'Horizontal 2' scorecard, sized for wallet-style scorecard holders.",
-            "courtesyOf": "Janna",
-            "link": "/scorecards/scorecard-janna.pdf",
             "resourceFormat": "PDF"
         },
         {

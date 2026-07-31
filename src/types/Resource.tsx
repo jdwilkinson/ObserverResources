@@ -19,6 +19,11 @@ const formatToTextMap: Record<ResourceFormat, string> = {
     'PDF': 'PDF',
 }
 
+export interface AlternateVersion {
+    title: string;
+    link: string;
+}
+
 export interface ResourceProperties {
     id: string;
     imageSourceUrl: string;
@@ -28,6 +33,7 @@ export interface ResourceProperties {
     isOfficialUsauResource?: boolean;
     courtesyOf?: string;
     resourceFormat: string;
+    alternateVersions?: AlternateVersion[];
 }
 
 abstract class Resource {
@@ -40,6 +46,7 @@ abstract class Resource {
     protected isOfficialUsauResource: boolean;
     protected courtesyOf: string;
     protected resourceFormat?: ResourceFormat;
+    protected alternateVersions: AlternateVersion[];
 
     private footerChips: JSX.Element[] = [];
 
@@ -53,7 +60,8 @@ abstract class Resource {
             link,
             isOfficialUsauResource = false,
             courtesyOf = '',
-            resourceFormat
+            resourceFormat,
+            alternateVersions = [],
         }: ResourceProperties) {
         this.resourceType = resourceType;
         this.id = id;
@@ -64,6 +72,7 @@ abstract class Resource {
         this.isOfficialUsauResource = isOfficialUsauResource;
         this.courtesyOf = courtesyOf;
         this.resourceFormat = resourceFormat as ResourceFormat;
+        this.alternateVersions = alternateVersions;
 
         this.populateFooterChips();
     }
@@ -98,6 +107,22 @@ abstract class Resource {
                         <a href={this.link} target="_blank" rel="noopener noreferrer" className="resource-link">
                             {this.description}
                         </a>
+                        {this.alternateVersions.length > 0 ?
+                            <>
+                                <br />
+                                <b>Other formats:</b>
+                                &nbsp;
+                                {this.alternateVersions.map((version, index) => (
+                                    <span key={index}>
+                                        {index > 0 && ', '}
+                                        <a href={version.link} target="_blank" rel="noopener noreferrer">
+                                            {version.title}
+                                        </a>
+                                    </span>
+                                ))}
+                            </>
+                            :
+                            <></>}
                     </div>
                     {this.footerChips.length > 0 ?
                         <>
