@@ -16,7 +16,7 @@ More complicated is the creation of a brand-new category of resources.  The chan
 
 #### Modifying a resource
 
-If, for example, the link or name of a resource needs to be updated, simply make the change directly to [resources.json].  No other plumbing is required.
+If, for example, the link or name of a resource needs to be updated, simply make the change directly to `resources.json`.  No other plumbing is required.
 
 #### Deleting a resource
 

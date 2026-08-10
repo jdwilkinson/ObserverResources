@@ -263,6 +263,15 @@
             "resourceFormat": "PDF"
         },
         {
+            "id": "scorecard-burn",
+            "imageSourceUrl": "/scorecards/scorecard-burn.png",
+            "title": "Horizontal 5",
+            "description": "Still horizontal scorecard, with dark on the right and a combined-score approach to ABBA tracking.",
+            "courtesyOf": "Burn",
+            "link": "/scorecards/scorecard-burn.pdf",
+            "resourceFormat": "PDF"
+        },
+        {
             "id": "scorecard-wally",
             "imageSourceUrl": "/scorecards/scorecard-wally.png",
             "title": "Vertical 1",
