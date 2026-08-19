@@ -4,7 +4,11 @@ import CollapsibleSection from '../src/CollapsibleSection';
 
 describe('CollapsibleSection component', () => {
     test('renders title', () => {
-        const { container } = render(<CollapsibleSection sectionTitle="Test Section">Content</CollapsibleSection>);
+        const { container } = render(
+            <CollapsibleSection
+                sectionTitle="Test Section"
+                containedItems={[<div>Content</div>]}
+            />);
 
         const htmlString = container.innerHTML;
         expect(htmlString).toContain('Test Section');
@@ -12,11 +16,13 @@ describe('CollapsibleSection component', () => {
 
     test('renders child count when collapsed', () => {
         const { container } = render(
-            <CollapsibleSection sectionTitle="x">
-                <span>a</span>
-                <span>b</span>
-                <span>c</span>
-            </CollapsibleSection>
+            <CollapsibleSection
+                sectionTitle="x"
+                containedItems={[
+                    <span>a</span>,
+                    <span>b</span>,
+                    <span>c</span>]}
+            />
         );
 
         const htmlString = container.innerHTML;
@@ -26,11 +32,13 @@ describe('CollapsibleSection component', () => {
 
     test('child count disappears when expanded', async () => {
         const { container } = render(
-            <CollapsibleSection sectionTitle="x">
-                <span>a</span>
-                <span>b</span>
-                <span>c</span>
-            </CollapsibleSection>
+            <CollapsibleSection
+                sectionTitle="x"
+                containedItems={[
+                    <span>a</span>,
+                    <span>b</span>,
+                    <span>c</span>]}
+            />
         );
 
         const header = container.getElementsByClassName('collapsiblesection-always-visible-header')[0];
@@ -42,7 +50,12 @@ describe('CollapsibleSection component', () => {
     });
 
     test('doesn\'t render if empty', () => {
-        const { container } = render(<CollapsibleSection sectionTitle="Empty Section" />);
+        const { container } = render(
+            <CollapsibleSection
+                sectionTitle="Empty Section"
+                containedItems={[]}
+            />
+        );
 
         const htmlString = container.innerHTML;
         expect(htmlString).toBe('');

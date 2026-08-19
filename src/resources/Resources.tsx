@@ -1,5 +1,6 @@
 import data from "./resources.json";
 import { App, Book, HeadObserverTool, Jersey, ObserverManual, ObserverUniversityVideo, Radio, Rules, RulesClinic, RulesQuiz, Scorecard, Shoe } from "../types/ResourceTypes";
+import Resource from "../types/Resource";
 
 const Resources = {
     "apps": data.apps.map(app => App.createFromObject(app)),
@@ -14,6 +15,12 @@ const Resources = {
     "rulesQuizzes": data.rulesQuizzes.map(quiz => RulesQuiz.createFromObject(quiz)),
     "scorecards": data.scorecards.map(sc => Scorecard.createFromObject(sc)),
     "shoes": data.shoes.map(shoe => Shoe.createFromObject(shoe)),
+
+    getRenderedResourcesForRuleset: function (resources: Resource[], ruleset: string): JSX.Element[] {
+        return resources
+            .filter(r => r.includeInRuleset(ruleset))
+            .map(r => r.render());
+    }
 };
 
 export default Resources;

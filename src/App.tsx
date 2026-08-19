@@ -1,8 +1,16 @@
+import { useState } from 'react';
 import CollapsibleSection from './CollapsibleSection';
 import Resources from './resources/Resources';
-import { App as AppResource, Book, HeadObserverTool, Jersey, ObserverManual, ObserverUniversityVideo, Radio, Rules, RulesClinic, RulesQuiz, Scorecard, Shoe } from './types/ResourceTypes';
+import Ruleset from './types/Ruleset';
+import RulesetPicker from './RulesetPicker';
 
 const App = () => {
+  const [activeRuleset, setActiveRuleset] = useState<string>(Ruleset.USAU);
+
+  function onRulesetChange(newRuleset: string) {
+    setActiveRuleset(newRuleset);
+  }
+
   return (
     <main>
       <section className="main-section">
@@ -10,68 +18,70 @@ const App = () => {
 
         <hr className="hr-separator" />
 
-        <CollapsibleSection sectionTitle="Rules">
-          {Resources.rules.map((rule: Rules) => (rule.render()))}
-        </CollapsibleSection>
+        <RulesetPicker onRulesetChange={onRulesetChange} />
 
-        <CollapsibleSection sectionTitle="Observer manual">
-          {Resources.observerManuals.map((manual: ObserverManual) => (manual.render()))}
-        </CollapsibleSection>
+        <CollapsibleSection
+          sectionTitle="Rules"
+          containedItems={Resources.getRenderedResourcesForRuleset(Resources.rules, activeRuleset)} />
 
-        <CollapsibleSection sectionTitle="Jerseys">
-          {Resources.jerseys.map((jersey: Jersey) => (jersey.render()))}
-        </CollapsibleSection>
+        <CollapsibleSection
+          sectionTitle="Observer manual"
+          containedItems={Resources.getRenderedResourcesForRuleset(Resources.observerManuals, activeRuleset)} />
 
-        <CollapsibleSection sectionTitle="Scorecards">
-          {Resources.scorecards.map((sc: Scorecard) => (sc.render()))}
-        </CollapsibleSection>
+        <CollapsibleSection
+          sectionTitle="Jerseys"
+          containedItems={Resources.getRenderedResourcesForRuleset(Resources.jerseys, activeRuleset)} />
 
-        <CollapsibleSection sectionTitle="Shoes">
-          {Resources.shoes.map((shoe: Shoe) => (shoe.render()))}
-        </CollapsibleSection>
+        <CollapsibleSection
+          sectionTitle="Scorecards"
+          containedItems={Resources.getRenderedResourcesForRuleset(Resources.scorecards, activeRuleset)} />
+
+        <CollapsibleSection
+          sectionTitle="Shoes"
+          containedItems={Resources.getRenderedResourcesForRuleset(Resources.shoes, activeRuleset)} />
 
         {/* TODO: Scour Discord for shorts, jackets, hats, etc */}
         {/* <CollapsibleSection sectionTitle="Apparel">
           ...
         </CollapsibleSection> */}
 
-        <CollapsibleSection sectionTitle="Radios">
-          {Resources.radios.map((radio: Radio) => (radio.render()))}
-        </CollapsibleSection>
+        <CollapsibleSection
+          sectionTitle="Radios"
+          containedItems={Resources.getRenderedResourcesForRuleset(Resources.radios, activeRuleset)} />
 
-        <CollapsibleSection sectionTitle="Observer University videos">
-          {Resources.observerUniversityVideos.map((video: ObserverUniversityVideo) => (video.render()))}
-        </CollapsibleSection>
+        <CollapsibleSection
+          sectionTitle="Observer University videos"
+          containedItems={Resources.getRenderedResourcesForRuleset(Resources.observerUniversityVideos, activeRuleset)} />
 
-        <CollapsibleSection sectionTitle="Books">
-          {Resources.books.map((book: Book) => (book.render()))}
-        </CollapsibleSection>
+        <CollapsibleSection
+          sectionTitle="Books"
+          containedItems={Resources.getRenderedResourcesForRuleset(Resources.books, activeRuleset)} />
 
-        <CollapsibleSection sectionTitle="Rules quizzes">
-          {Resources.rulesQuizzes.map((quiz: RulesQuiz) => (quiz.render()))}
-        </CollapsibleSection>
+        <CollapsibleSection
+          sectionTitle="Rules quizzes"
+          containedItems={Resources.getRenderedResourcesForRuleset(Resources.rulesQuizzes, activeRuleset)} />
 
-        <CollapsibleSection sectionTitle="Rules clinics">
-          {Resources.rulesClinics.map((clinic: RulesClinic) => (clinic.render()))}
-        </CollapsibleSection>
+        <CollapsibleSection
+          sectionTitle="Rules clinics"
+          containedItems={Resources.getRenderedResourcesForRuleset(Resources.rulesClinics, activeRuleset)} />
 
         {/* TODO: Consider whether this is the right place to put video resources */}
         {/* <CollapsibleSection sectionTitle="Video replays">
           ...
           </CollapsibleSection> */}
 
-        <CollapsibleSection sectionTitle="Apps">
-          {Resources.apps.map((app: AppResource) => (app.render()))}
-        </CollapsibleSection>
+        <CollapsibleSection
+          sectionTitle="Apps"
+          containedItems={Resources.getRenderedResourcesForRuleset(Resources.apps, activeRuleset)} />
 
-        <CollapsibleSection sectionTitle="Head Observer Tools">
-          {Resources.headObserverTools.map((tool: HeadObserverTool) => (tool.render()))}
-        </CollapsibleSection>
+        <CollapsibleSection
+          sectionTitle="Head Observer Tools"
+          containedItems={Resources.getRenderedResourcesForRuleset(Resources.headObserverTools, activeRuleset)} />
       </section>
 
       <section>
         <div className="footer">
-          Last updated <b>2026-08-17</b>; see&nbsp;
+          Last updated <b>2026-08-19</b>; see&nbsp;
           <a href='https://github.com/jdwilkinson/ObserverResources/commits/main/' target='_blank'>
             detailed changelog
           </a>.

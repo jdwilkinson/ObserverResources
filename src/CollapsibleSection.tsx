@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const CollapsibleSection = (props: { sectionTitle: string; children?: React.ReactNode }) => {
+const CollapsibleSection = (props: { sectionTitle: string; containedItems: JSX.Element[] }) => {
     const [collapsed, setCollapsed] = useState(true);
 
     function onClick() {
@@ -22,12 +22,12 @@ const CollapsibleSection = (props: { sectionTitle: string; children?: React.Reac
         if (!collapsed) {
             return <></>;
         }
-        const count = Array.isArray(props.children) ? props.children.length : '?';
+        const count = props.containedItems.length;
         return <span className="grayscale"> &nbsp; ({count})</span>;
     }
 
     return (
-        props.children ?
+        props.containedItems.length > 0 ?
             (
                 <>
                     <div className="collapsiblesection-container"> {/* Outer wrapper */}
@@ -41,7 +41,7 @@ const CollapsibleSection = (props: { sectionTitle: string; children?: React.Reac
                         <div className={`collapsiblesection-contents-outer-wrapper ${!collapsed ? 'is-open' : ''}`}> {/* Inner wrapper, can disappear */}
                             <div className="collapsiblesection-contents-inner-wrapper"> {/* Another inner wrapper, can also disappear */}
                                 <div className={`collapsiblesection-content ${!collapsed ? 'is-open' : ''}`}> {/* Actual inner content */}
-                                    {props.children}
+                                    {props.containedItems}
                                 </div>
                             </div>
                         </div>

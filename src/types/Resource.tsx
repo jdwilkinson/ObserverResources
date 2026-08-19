@@ -34,6 +34,7 @@ export interface ResourceProperties {
     courtesyOf?: string;
     resourceFormat: string;
     alternateVersions?: AlternateVersion[];
+    rulesets: string[];
 }
 
 abstract class Resource {
@@ -47,6 +48,7 @@ abstract class Resource {
     protected courtesyOf: string;
     protected resourceFormat?: ResourceFormat;
     protected alternateVersions: AlternateVersion[];
+    protected rulesets: string[];
 
     private footerChips: JSX.Element[] = [];
 
@@ -62,6 +64,7 @@ abstract class Resource {
             courtesyOf = '',
             resourceFormat,
             alternateVersions = [],
+            rulesets = [],
         }: ResourceProperties) {
         this.resourceType = resourceType;
         this.id = id;
@@ -73,8 +76,13 @@ abstract class Resource {
         this.courtesyOf = courtesyOf;
         this.resourceFormat = resourceFormat as ResourceFormat;
         this.alternateVersions = alternateVersions;
+        this.rulesets = rulesets;
 
         this.populateFooterChips();
+    }
+
+    public includeInRuleset(ruleset: string): boolean {
+        return this.rulesets.includes(ruleset);
     }
 
     public render(): JSX.Element {

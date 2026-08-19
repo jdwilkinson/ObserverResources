@@ -129,6 +129,13 @@ p {
   padding: 8px;
 }
 
+.ruleset-picker {
+  font-size: small;
+  color: #334155;
+  text-align: center;
+  padding: 8px;
+}
+
 .topmost-header {
   text-align: center;
   text-wrap: nowrap;

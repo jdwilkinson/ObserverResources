@@ -7,7 +7,10 @@
             "description": "A watch-based app that tracks time between points, timeouts, and halftime.  Android only.",
             "courtesyOf": "Jason R",
             "link": "https://play.google.com/store/apps/details?id=com.ultimateobservers.sota",
-            "resourceFormat": "WebLink"
+            "resourceFormat": "WebLink",
+            "rulesets": [
+                "USAU"
+            ]
         },
         {
             "id": "app-ultiobserver",
@@ -16,7 +19,10 @@
             "description": "A phone-based app that tracks time and game state, intended to replace both paper scoresheets and a stopwatch.  Android only.",
             "courtesyOf": "Mike J",
             "link": "https://github.com/rmjarvis/UltiObserver#installation",
-            "resourceFormat": "WebLink"
+            "resourceFormat": "WebLink",
+            "rulesets": [
+                "USAU"
+            ]
         }
     ],
     "books": [
@@ -27,7 +33,13 @@
             "description": "This book dives deeply into the 'soft skills' necessary to be a game official: communication, game management, conflict resolution, etc.  It's an excellent read.",
             "courtesyOf": "Zeta",
             "link": "https://www.amazon.com/Social-Ref-Become-Better-Referee/dp/1793133549",
-            "resourceFormat": "Amazon"
+            "resourceFormat": "Amazon",
+            "rulesets": [
+                "USAU",
+                "WUL",
+                "PUL",
+                "UFA"
+            ]
         }
     ],
     "headObserverTools": [
@@ -38,7 +50,10 @@
             "description": "A web-based tool that generates tables of games and cap times for a given tournament.  Useful when drawing up an observer schedule.",
             "courtesyOf": "Austin",
             "link": "https://afbcary.github.io/obs-shep/",
-            "resourceFormat": "WebLink"
+            "resourceFormat": "WebLink",
+            "rulesets": [
+                "USAU"
+            ]
         }
     ],
     "jerseys": [
@@ -49,7 +64,10 @@
             "title": "Official USAU orange jersey",
             "description": "The official orange jersey of the observer program.  You absolutely must have one of these.",
             "link": "https://www.spinultimate.com/collections/usa-ultimate-observer-jerseys/products/observer-short-sleeve-jersey-orange",
-            "resourceFormat": "WebLink"
+            "resourceFormat": "WebLink",
+            "rulesets": [
+                "USAU"
+            ]
         },
         {
             "id": "jersey-short-green",
@@ -58,7 +76,10 @@
             "title": "Official USAU green jersey",
             "description": "The official green jersey of the observer program.  It's highly recommended to have one of these.",
             "link": "https://www.spinultimate.com/collections/usa-ultimate-observer-jerseys/products/observer-short-sleeve-jersey-kelly",
-            "resourceFormat": "WebLink"
+            "resourceFormat": "WebLink",
+            "rulesets": [
+                "USAU"
+            ]
         },
         {
             "id": "jersey-long-orange",
@@ -66,7 +87,10 @@
             "title": "Long-sleeve orange jersey",
             "description": "An unofficial long-sleeved variant of the orange jersey. May be useful in cold conditions, though some people find that it complicates wearing a radio.",
             "link": "https://www.spinultimate.com/collections/usa-ultimate-observer-jerseys/products/observer-long-sleeve-jersey-orange",
-            "resourceFormat": "WebLink"
+            "resourceFormat": "WebLink",
+            "rulesets": [
+                "USAU"
+            ]
         }
     ],
     "observerManuals": [
@@ -77,7 +101,10 @@
             "title": "USAU observer manual (PDF)",
             "description": "The official USAU observer manual, discussing how to apply the rules and how to conduct yourself as an observer.  Last updated April 2024.",
             "link": "https://usaultimate.org/wp-content/uploads/2020/11/2024-Observer-Manual-2024-04-25.pdf",
-            "resourceFormat": "PDF"
+            "resourceFormat": "PDF",
+            "rulesets": [
+                "USAU"
+            ]
         }
     ],
     "observerUniversityVideos": [
@@ -87,7 +114,10 @@
             "title": "Volume 1",
             "description": "Created for return-to-play in 2021, the first installment of this educational video series walks through many topics at a shallow level. ~75 minutes.",
             "link": "https://www.youtube.com/watch?v=jEssYG0SwO8",
-            "resourceFormat": "YouTube"
+            "resourceFormat": "YouTube",
+            "rulesets": [
+                "USAU"
+            ]
         },
         {
             "id": "observer-university-2",
@@ -95,7 +125,10 @@
             "title": "Volume 2",
             "description": "The second installment gets more tactical, diving deeper into what actually occurs on the field throughout a game. ~75 minutes.",
             "link": "https://www.youtube.com/watch?v=HndetKAiOmE",
-            "resourceFormat": "YouTube"
+            "resourceFormat": "YouTube",
+            "rulesets": [
+                "USAU"
+            ]
         },
         {
             "id": "observer-university-3",
@@ -103,7 +136,10 @@
             "title": "Volume 3",
             "description": "The final installment discusses the harder aspects of game management, and includes several videos as examples. ~75 minutes.",
             "link": "https://www.youtube.com/watch?v=5ayEnILKlK4",
-            "resourceFormat": "YouTube"
+            "resourceFormat": "YouTube",
+            "rulesets": [
+                "USAU"
+            ]
         }
     ],
     "radios": [
@@ -113,7 +149,13 @@
             "title": "Ejeas V4",
             "description": "The de-facto standard for radio communication. Allows pairing up to 4 headsets. Many observers have a pair of these.",
             "link": "https://www.amazon.com/EJEAS-Motorcycle-Bluetooth-Real-time-Simultaneously/dp/B09ZDYR5KG/",
-            "resourceFormat": "Amazon"
+            "resourceFormat": "Amazon",
+            "rulesets": [
+                "USAU",
+                "WUL",
+                "PUL",
+                "UFA"
+            ]
         },
         {
             "id": "radio-ejeas-v6",
@@ -121,7 +163,13 @@
             "title": "Ejeas V6",
             "description": "Similar to the V4's, with the major drawback of only being able to pair two headsets. Seems to be slightly more reliable and have higher-quality audio.",
             "link": "https://www.amazon.com/EJEAS-Motorcycle-Bluetooth-Real-time-Simultaneously/dp/B07BPX8RH9/",
-            "resourceFormat": "Amazon"
+            "resourceFormat": "Amazon",
+            "rulesets": [
+                "USAU",
+                "WUL",
+                "PUL",
+                "UFA"
+            ]
         }
     ],
     "rules": [
@@ -132,7 +180,10 @@
             "title": "USAU rules (web)",
             "description": "The web-based version of USAU's 2026-2027 official rules.",
             "link": "https://usaultimate.org/rules/",
-            "resourceFormat": "WebLink"
+            "resourceFormat": "WebLink",
+            "rulesets": [
+                "USAU"
+            ]
         },
         {
             "id": "rules-usau-pdf",
@@ -141,7 +192,10 @@
             "title": "USAU rules (PDF)",
             "description": "The PDF version of USAU's 2026-2027 official rules; well-suited for printing.",
             "link": "https://usaultimate.org/wp-content/uploads/2025/12/2026-27-Official-Rules-of-Ultimate.pdf",
-            "resourceFormat": "PDF"
+            "resourceFormat": "PDF",
+            "rulesets": [
+                "USAU"
+            ]
         },
         {
             "id": "dynamic-rules",
@@ -150,7 +204,10 @@
             "description": "A more user-friendly web version of the rules.  Allows pinning different rules to see them side-by-side, and easy sharing of those views. Also contains WUL, PUL, and UFA rules.",
             "courtesyOf": "Austin",
             "link": "https://afbcary.github.io/regula_nexus/",
-            "resourceFormat": "WebLink"
+            "resourceFormat": "WebLink",
+            "rulesets": [
+                "USAU"
+            ]
         },
         {
             "id": "rules-best-perspective",
@@ -158,7 +215,10 @@
             "title": "Best Perspective",
             "description": "Another web-based version of the rules, with good searchability.  Created by a non-observer.",
             "link": "https://usaurules.com/rules/usau-official-2026-27",
-            "resourceFormat": "WebLink"
+            "resourceFormat": "WebLink",
+            "rulesets": [
+                "USAU"
+            ]
         }
     ],
     "rulesClinics": [
@@ -169,7 +229,10 @@
             "description": "Developed by DiscNW, this slide deck is suitable for presenting to league players.  It provides an intermediate overview of commonly-encountered rules situations.",
             "courtesyOf": "DiscNW",
             "link": "https://docs.google.com/presentation/d/16MCQM4GuojSA_mFl1BBbsgSacZ9mFjTxQFjuvnxEsLw/edit",
-            "resourceFormat": "GoogleSlides"
+            "resourceFormat": "GoogleSlides",
+            "rulesets": [
+                "USAU"
+            ]
         }
     ],
     "rulesQuizzes": [
@@ -180,7 +243,10 @@
             "title": "USAU college rules quiz",
             "description": "This was sent to teams prior to 2026 College Nationals.  It's relatively short and simple.",
             "link": "https://docs.google.com/forms/d/e/1FAIpQLSdGJ-G4_BF9gTRPCHvjkmRrc8ADFQAgUXWni6UgO0NOeFQYWQ/viewform",
-            "resourceFormat": "GoogleForm"
+            "resourceFormat": "GoogleForm",
+            "rulesets": [
+                "USAU"
+            ]
         },
         {
             "id": "rules-quiz-cotton",
@@ -189,7 +255,10 @@
             "description": "A longer, more difficult, and more comprehensive quiz.  This occasionally makes the rounds among teams, and has over 4,000 responses to date.",
             "courtesyOf": "Cotton",
             "link": "https://docs.google.com/forms/d/e/1FAIpQLSfoOE97ZO3hYOoVHLQXwuXoEOHmofdJbqfedIyZGFq3F_wQQg/viewform",
-            "resourceFormat": "GoogleForm"
+            "resourceFormat": "GoogleForm",
+            "rulesets": [
+                "USAU"
+            ]
         },
         {
             "id": "rules-quiz-best-perspective",
@@ -197,7 +266,10 @@
             "title": "'Best Perspective' rules quiz",
             "description": "A set of rules quizzes created by a non-observer.  Has randomized, per-section, scenario-based, and timed modes.  Created largely by AI; may contain a few mistakes.",
             "link": "https://usaurules.com/quiz",
-            "resourceFormat": "WebLink"
+            "resourceFormat": "WebLink",
+            "rulesets": [
+                "USAU"
+            ]
         }
     ],
     "scorecards": [
@@ -208,7 +280,10 @@
             "title": "Official USAU scorecard",
             "description": "The scorecard contained in the observer manual; technically the 'official' observer scorecard.",
             "link": "/scorecards/scorecard-usau.pdf",
-            "resourceFormat": "PDF"
+            "resourceFormat": "PDF",
+            "rulesets": [
+                "USAU"
+            ]
         },
         {
             "id": "scorecard-zeta",
@@ -217,7 +292,10 @@
             "description": "A horizontally-oriented scorecard, with slots to track ABBA gender-matching.",
             "courtesyOf": "Zeta",
             "link": "/scorecards/scorecard-zeta.pdf",
-            "resourceFormat": "PDF"
+            "resourceFormat": "PDF",
+            "rulesets": [
+                "USAU"
+            ]
         },
         {
             "id": "scorecard-janna",
@@ -232,7 +310,10 @@
             ],
             "courtesyOf": "Janna",
             "link": "/scorecards/scorecard-janna-2x2.pdf",
-            "resourceFormat": "PDF"
+            "resourceFormat": "PDF",
+            "rulesets": [
+                "USAU"
+            ]
         },
         {
             "id": "scorecard-dylan",
@@ -241,7 +322,10 @@
             "description": "Another horizontal scorecard, with a different aspect ratio, larger scoreboxes, and a unique way to keep track of ABBA ratios.",
             "courtesyOf": "Dylan",
             "link": "/scorecards/scorecard-dylan.pdf",
-            "resourceFormat": "PDF"
+            "resourceFormat": "PDF",
+            "rulesets": [
+                "USAU"
+            ]
         },
         {
             "id": "scorecard-yearout",
@@ -260,7 +344,10 @@
             ],
             "courtesyOf": "Jason Y",
             "link": "/scorecards/scorecard-yearout-2.pdf",
-            "resourceFormat": "PDF"
+            "resourceFormat": "PDF",
+            "rulesets": [
+                "USAU"
+            ]
         },
         {
             "id": "scorecard-burn",
@@ -269,7 +356,10 @@
             "description": "Still horizontal scorecard, with dark on the right and a combined-score approach to ABBA tracking.",
             "courtesyOf": "Burn",
             "link": "/scorecards/scorecard-burn.pdf",
-            "resourceFormat": "PDF"
+            "resourceFormat": "PDF",
+            "rulesets": [
+                "USAU"
+            ]
         },
         {
             "id": "scorecard-wally",
@@ -278,7 +368,10 @@
             "description": "A vertically-oriented scorecard, also with ABBA tracking slots.",
             "courtesyOf": "Wally",
             "link": "https://docs.google.com/spreadsheets/d/1F3vDwuCvAQZUAxPEUgbfK8jgJqbMTcb0QkCB3ra74_0/edit?gid=483502455#gid=483502455",
-            "resourceFormat": "GoogleDoc"
+            "resourceFormat": "GoogleDoc",
+            "rulesets": [
+                "USAU"
+            ]
         },
         {
             "id": "scorecard-joey",
@@ -287,7 +380,10 @@
             "description": "Another vertical scorecard, with shading to help differentiate light/dark and ABBA tracking at a glance.",
             "courtesyOf": "Joey",
             "link": "/scorecards/scorecard-joey.pdf",
-            "resourceFormat": "PDF"
+            "resourceFormat": "PDF",
+            "rulesets": [
+                "USAU"
+            ]
         }
     ],
     "shoes": [
@@ -297,7 +393,13 @@
             "title": "Salomon SpeedCross",
             "description": "For those who prefer trail-runners over cleats, these seem to be the de-facto standard.  They're black, and come in men's, women's, wide, and Gore-Tex.",
             "link": "https://www.salomon.com/en-us/c/shoes/icons/speedcross/shopby/colors-black",
-            "resourceFormat": "WebLink"
+            "resourceFormat": "WebLink",
+            "rulesets": [
+                "USAU",
+                "WUL",
+                "PUL",
+                "UFA"
+            ]
         }
     ]
 }
