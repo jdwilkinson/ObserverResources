@@ -31,6 +31,9 @@ export interface ResourceProperties {
     description?: string;
     link: string;
     isOfficialUsauResource?: boolean;
+    isOfficialWulResource?: boolean;
+    isOfficialPulResource?: boolean;
+    isOfficialUfaResource?: boolean;
     courtesyOf?: string;
     resourceFormat: string;
     alternateVersions?: AlternateVersion[];
@@ -45,6 +48,9 @@ abstract class Resource {
     protected description: string;
     protected link: string;
     protected isOfficialUsauResource: boolean;
+    protected isOfficialWulResource: boolean;
+    protected isOfficialPulResource: boolean;
+    protected isOfficialUfaResource: boolean;
     protected courtesyOf: string;
     protected resourceFormat?: ResourceFormat;
     protected alternateVersions: AlternateVersion[];
@@ -61,6 +67,9 @@ abstract class Resource {
             description = '',
             link,
             isOfficialUsauResource = false,
+            isOfficialWulResource = false,
+            isOfficialPulResource = false,
+            isOfficialUfaResource = false,
             courtesyOf = '',
             resourceFormat,
             alternateVersions = [],
@@ -73,6 +82,9 @@ abstract class Resource {
         this.description = description;
         this.link = link;
         this.isOfficialUsauResource = isOfficialUsauResource;
+        this.isOfficialWulResource = isOfficialWulResource;
+        this.isOfficialPulResource = isOfficialPulResource;
+        this.isOfficialUfaResource = isOfficialUfaResource;
         this.courtesyOf = courtesyOf;
         this.resourceFormat = resourceFormat as ResourceFormat;
         this.alternateVersions = alternateVersions;
@@ -163,12 +175,57 @@ abstract class Resource {
 
         if (this.isOfficialUsauResource) {
             tempChips.push(
-                <div className="description-footer-chip footer-chip-official-usau-resource">
+                <div className="description-footer-chip footer-chip-official-resource">
                     <img
                         src='/img/usau-logo.svg'
                         width='30'
                         alt='Official USAU resource'
                         title='Official USAU resource'
+                    />
+                    &nbsp;
+                    Official resource
+                </div>
+            );
+        }
+
+        if (this.isOfficialWulResource) {
+            tempChips.push(
+                <div className="description-footer-chip footer-chip-official-resource">
+                    <img
+                        src='/img/wul-logo.png'
+                        width='30'
+                        alt='Official WUL resource'
+                        title='Official WUL resource'
+                    />
+                    &nbsp;
+                    Official resource
+                </div>
+            );
+        }
+
+        if (this.isOfficialPulResource) {
+            tempChips.push(
+                <div className="description-footer-chip footer-chip-official-resource">
+                    <img
+                        src='/img/pul-logo.png'
+                        width='30'
+                        alt='Official PUL resource'
+                        title='Official PUL resource'
+                    />
+                    &nbsp;
+                    Official resource
+                </div>
+            );
+        }
+
+        if (this.isOfficialUfaResource) {
+            tempChips.push(
+                <div className="description-footer-chip footer-chip-official-resource">
+                    <img
+                        src='/img/ufa-logo.png'
+                        width='30'
+                        alt='Official UFA resource'
+                        title='Official UFA resource'
                     />
                     &nbsp;
                     Official resource

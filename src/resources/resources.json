@@ -174,6 +174,42 @@
     ],
     "rules": [
         {
+            "id": "rules-wul",
+            "isOfficialWulResource": true,
+            "imageSourceUrl": "/rules/rules-wul.png",
+            "title": "WUL rules (web)",
+            "description": "The web-based version of WUL's 2026 official rules.",
+            "link": "https://westernultimateleague.com/rules",
+            "resourceFormat": "WebLink",
+            "rulesets": [
+                "WUL"
+            ]
+        },
+        {
+            "id": "rules-pul",
+            "isOfficialPulResource": true,
+            "imageSourceUrl": "/rules/rules-pul.png",
+            "title": "PUL rules (PDF)",
+            "description": "The PDF version of PUL's 2026 official rules.",
+            "link": "https://static1.squarespace.com/static/654a849963433d7f4352c0de/t/69c4114a072a5e37f3831bdb/1774457162498/2026+PUL+Rules.pdf",
+            "resourceFormat": "PDF",
+            "rulesets": [
+                "PUL"
+            ]
+        },
+        {
+            "id": "rules-ufa",
+            "isOfficialUfaResource": true,
+            "imageSourceUrl": "/rules/rules-ufa.png",
+            "title": "UFA rules (PDF)",
+            "description": "The PDF version of UFA's 2026 official rules.",
+            "link": "https://watchufa.com/sites/default/files/UFA%20Rule%20Book%202026.pdf",
+            "resourceFormat": "PDF",
+            "rulesets": [
+                "UFA"
+            ]
+        },
+        {
             "id": "rules-usau",
             "isOfficialUsauResource": true,
             "imageSourceUrl": "/rules/rules-usau-web.png",
@@ -182,7 +218,9 @@
             "link": "https://usaultimate.org/rules/",
             "resourceFormat": "WebLink",
             "rulesets": [
-                "USAU"
+                "USAU",
+                "WUL",
+                "PUL"
             ]
         },
         {
@@ -206,7 +244,10 @@
             "link": "https://afbcary.github.io/regula_nexus/",
             "resourceFormat": "WebLink",
             "rulesets": [
-                "USAU"
+                "USAU",
+                "WUL",
+                "PUL",
+                "UFA"
             ]
         },
         {
