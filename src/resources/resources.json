@@ -425,6 +425,18 @@
             "rulesets": [
                 "USAU"
             ]
+        },
+        {
+            "id": "scorecard-pul-burn",
+            "imageSourceUrl": "/scorecards/scorecard-pul-burn.png",
+            "title": "PUL two-sided",
+            "description": "A two-sided scorecard, with handy quarter-start information on the reverse side.",
+            "courtesyOf": "Burn",
+            "link": "/scorecards/scorecard-pul-burn.pdf",
+            "resourceFormat": "PDF",
+            "rulesets": [
+                "PUL"
+            ]
         }
     ],
     "shoes": [
