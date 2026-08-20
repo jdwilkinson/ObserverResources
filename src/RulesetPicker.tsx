@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, Fragment } from "react";
 import Ruleset from "./types/Ruleset";
 
 const RulesetPicker = (props: { onRulesetChange: (ruleset: string) => void }) => {
@@ -8,11 +8,11 @@ const RulesetPicker = (props: { onRulesetChange: (ruleset: string) => void }) =>
         let first: boolean = true;
         let returnArray: JSX.Element[] = [];
 
-        returnArray.push(<span><b>Ruleset:</b> </span>);
+        returnArray.push(<span key="ruleset-label"><b>Ruleset:</b> </span>);
 
         for (const ruleset of Object.values(Ruleset)) {
             if (!first) {
-                returnArray.push(<span> &nbsp; | </span>);
+                returnArray.push(<span key={`ruleset-space-${ruleset}`}> &nbsp; | </span>);
             }
 
             const checked = activeRuleset === ruleset;
@@ -24,7 +24,7 @@ const RulesetPicker = (props: { onRulesetChange: (ruleset: string) => void }) =>
     };
 
     function renderRulesetOption(ruleset: string, checked: boolean): JSX.Element {
-        return (<>
+        return (<Fragment key={`ruleset-fragment-${ruleset}`}>
             <input
                 type="radio"
                 name="ruleset"
@@ -39,7 +39,7 @@ const RulesetPicker = (props: { onRulesetChange: (ruleset: string) => void }) =>
                 htmlFor={`ruleset-${ruleset}`}>
                 {ruleset}
             </label>
-        </>);
+        </Fragment>);
     }
 
     return (<div className="ruleset-picker">

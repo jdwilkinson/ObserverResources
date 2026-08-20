@@ -99,7 +99,7 @@ abstract class Resource {
 
     public render(): JSX.Element {
         return (
-            <div className="resource-card">
+            <div className="resource-card" key={this.id}>
                 {/* Image */}
                 <div className="resource-card-image-container">
                     <a href={this.link} target="_blank">
@@ -133,7 +133,7 @@ abstract class Resource {
                                 <b>Other formats:</b>
                                 &nbsp;
                                 {this.alternateVersions.map((version, index) => (
-                                    <span key={index}>
+                                    <span key={`alternate-version-${version.title}-${version.link}`}>
                                         {index > 0 && ', '}
                                         <a href={version.link} target="_blank">
                                             {version.title}
@@ -175,7 +175,7 @@ abstract class Resource {
 
         if (this.isOfficialUsauResource) {
             tempChips.push(
-                <div className="description-footer-chip footer-chip-official-resource">
+                <div className="description-footer-chip footer-chip-official-resource" key={this.id + '-official-usau'}>
                     <img
                         src='/img/usau-logo.svg'
                         width='30'
@@ -190,7 +190,7 @@ abstract class Resource {
 
         if (this.isOfficialWulResource) {
             tempChips.push(
-                <div className="description-footer-chip footer-chip-official-resource">
+                <div className="description-footer-chip footer-chip-official-resource" key={this.id + '-official-wul'}>
                     <img
                         src='/img/wul-logo.png'
                         width='30'
@@ -205,7 +205,7 @@ abstract class Resource {
 
         if (this.isOfficialPulResource) {
             tempChips.push(
-                <div className="description-footer-chip footer-chip-official-resource">
+                <div className="description-footer-chip footer-chip-official-resource" key={this.id + '-official-pul'}>
                     <img
                         src='/img/pul-logo.png'
                         width='30'
@@ -220,7 +220,7 @@ abstract class Resource {
 
         if (this.isOfficialUfaResource) {
             tempChips.push(
-                <div className="description-footer-chip footer-chip-official-resource">
+                <div className="description-footer-chip footer-chip-official-resource" key={this.id + '-official-ufa'}>
                     <img
                         src='/img/ufa-logo.png'
                         width='30'
@@ -235,7 +235,7 @@ abstract class Resource {
 
         if (this.resourceFormat) {
             tempChips.push(
-                <div className={`description-footer-chip ${formatToClassNameMap[this.resourceFormat]}`}>
+                <div className={`description-footer-chip ${formatToClassNameMap[this.resourceFormat]}`} key={this.id + '-format'}>
                     {formatToTextMap[this.resourceFormat]}
                 </div>
             );
@@ -243,7 +243,7 @@ abstract class Resource {
 
         if (this.courtesyOf && this.courtesyOf.trim() !== '') {
             tempChips.push(
-                <div className="description-footer-chip footer-chip-white">
+                <div className="description-footer-chip footer-chip-white" key={this.id + '-courtesy'}>
                     <em>Courtesy of&nbsp;<b>{this.courtesyOf}</b></em>
                 </div>
             );
@@ -251,7 +251,7 @@ abstract class Resource {
 
         // Space them out
         for (let i = 0; i < tempChips.length; i++) {
-            if (i > 0) this.footerChips.push(<span>&nbsp;</span>);
+            if (i > 0) this.footerChips.push(<span key={this.id + '-space-' + i}>&nbsp;</span>);
             this.footerChips.push(tempChips[i]);
         }
     }

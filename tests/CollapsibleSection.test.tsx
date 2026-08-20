@@ -7,7 +7,7 @@ describe('CollapsibleSection component', () => {
         const { container } = render(
             <CollapsibleSection
                 sectionTitle="Test Section"
-                containedItems={[<div>Content</div>]}
+                containedItems={[<div key="a">Content</div>]}
             />);
 
         const htmlString = container.innerHTML;
@@ -19,9 +19,9 @@ describe('CollapsibleSection component', () => {
             <CollapsibleSection
                 sectionTitle="x"
                 containedItems={[
-                    <span>a</span>,
-                    <span>b</span>,
-                    <span>c</span>]}
+                    <span key="a">a</span>,
+                    <span key="b">b</span>,
+                    <span key="c">c</span>]}
             />
         );
 
@@ -35,9 +35,9 @@ describe('CollapsibleSection component', () => {
             <CollapsibleSection
                 sectionTitle="x"
                 containedItems={[
-                    <span>a</span>,
-                    <span>b</span>,
-                    <span>c</span>]}
+                    <span key="a">a</span>,
+                    <span key="b">b</span>,
+                    <span key="c">c</span>]}
             />
         );
 

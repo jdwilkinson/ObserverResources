@@ -29,24 +29,22 @@ const CollapsibleSection = (props: { sectionTitle: string; containedItems: JSX.E
     return (
         props.containedItems.length > 0 ?
             (
-                <>
-                    <div className="collapsiblesection-container"> {/* Outer wrapper */}
-                        <div className={`collapsiblesection-always-visible-header ${!collapsed ? 'is-open' : ''}`} onClick={onClick}> {/* Section header, always visible */}
-                            <span>
-                                <span>{props.sectionTitle}</span>
-                                {getHeaderCountString()}
-                            </span>
-                            <span className="click-to-collapse">({getToggleVerb()} to {collapsed ? "expand" : "collapse"})</span>
-                        </div>
-                        <div className={`collapsiblesection-contents-outer-wrapper ${!collapsed ? 'is-open' : ''}`}> {/* Inner wrapper, can disappear */}
-                            <div className="collapsiblesection-contents-inner-wrapper"> {/* Another inner wrapper, can also disappear */}
-                                <div className={`collapsiblesection-content ${!collapsed ? 'is-open' : ''}`}> {/* Actual inner content */}
-                                    {props.containedItems}
-                                </div>
+                <div className="collapsiblesection-container" key={`collapsiblesection-container-${props.sectionTitle}`}> {/* Outer wrapper */}
+                    <div className={`collapsiblesection-always-visible-header ${!collapsed ? 'is-open' : ''}`} onClick={onClick}> {/* Section header, always visible */}
+                        <span>
+                            <span>{props.sectionTitle}</span>
+                            {getHeaderCountString()}
+                        </span>
+                        <span className="click-to-collapse">({getToggleVerb()} to {collapsed ? "expand" : "collapse"})</span>
+                    </div>
+                    <div className={`collapsiblesection-contents-outer-wrapper ${!collapsed ? 'is-open' : ''}`}> {/* Inner wrapper, can disappear */}
+                        <div className="collapsiblesection-contents-inner-wrapper"> {/* Another inner wrapper, can also disappear */}
+                            <div className={`collapsiblesection-content ${!collapsed ? 'is-open' : ''}`}> {/* Actual inner content */}
+                                {props.containedItems}
                             </div>
                         </div>
                     </div>
-                </>
+                </div>
             )
             :
             (<></>)
