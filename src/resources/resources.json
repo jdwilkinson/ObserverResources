@@ -111,6 +111,30 @@
             "rulesets": [
                 "USAU"
             ]
+        },
+        {
+            "id": "observer-manual-pul",
+            "isOfficialPulResource": true,
+            "imageSourceUrl": "/observer-manual/observer-manual-pul.png",
+            "title": "PUL observer manual (PDF)",
+            "description": "The official PUL observer manual, for the 2026 season.",
+            "link": "/observer-manual/observer-manual-pul.pdf",
+            "resourceFormat": "PDF",
+            "rulesets": [
+                "PUL"
+            ]
+        },
+        {
+            "id": "observer-manual-clock-operator-pul",
+            "isOfficialPulResource": true,
+            "imageSourceUrl": "/observer-manual/observer-manual-clock-operator-pul.png",
+            "title": "PUL clock operator manual (PDF)",
+            "description": "The official PUL clock operator manual, for the 2026 season.",
+            "link": "/observer-manual/observer-manual-clock-operator-pul.pdf",
+            "resourceFormat": "PDF",
+            "rulesets": [
+                "PUL"
+            ]
         }
     ],
     "observerUniversityVideos": [
