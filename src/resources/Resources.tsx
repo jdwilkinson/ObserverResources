@@ -1,5 +1,5 @@
 import data from "./resources.json";
-import { App, Book, HeadObserverTool, Jersey, ObserverManual, ObserverUniversityVideo, Radio, Rules, RulesClinic, RulesQuiz, Scorecard, Shoe } from "../types/ResourceTypes";
+import { App, Book, HeadObserverTool, Jersey, ObserverManual, ObserverUniversityVideo, Radio, RefereeManual, Rules, RulesClinic, RulesQuiz, Scorecard, Shoe } from "../types/ResourceTypes";
 import Resource from "../types/Resource";
 
 const Resources = {
@@ -8,6 +8,7 @@ const Resources = {
     "headObserverTools": data.headObserverTools.map(tool => HeadObserverTool.createFromObject(tool)),
     "jerseys": data.jerseys.map(jersey => Jersey.createFromObject(jersey)),
     "observerManuals": data.observerManuals.map(manual => ObserverManual.createFromObject(manual)),
+    "refereeManuals": data.refereeManuals.map(manual => RefereeManual.createFromObject(manual)),
     "observerUniversityVideos": data.observerUniversityVideos.map(video => ObserverUniversityVideo.createFromObject(video)),
     "radios": data.radios.map(radio => Radio.createFromObject(radio)),
     "rules": data.rules.map(rule => Rules.createFromObject(rule)),

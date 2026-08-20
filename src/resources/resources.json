@@ -99,8 +99,14 @@
             "isOfficialUsauResource": true,
             "imageSourceUrl": "/observer-manual/observer-manual-usau.png",
             "title": "USAU observer manual (PDF)",
-            "description": "The official USAU observer manual, discussing how to apply the rules and how to conduct yourself as an observer.  Last updated April 2024.",
-            "link": "https://usaultimate.org/wp-content/uploads/2020/11/2024-Observer-Manual-2024-04-25.pdf",
+            "description": "The official USAU observer manual, discussing how to apply the rules and how to conduct yourself as an observer.  Updated April 2024.",
+            "alternateVersions": [
+                {
+                    "title": "Original source",
+                    "link": "https://usaultimate.org/wp-content/uploads/2020/11/2024-Observer-Manual-2024-04-25.pdf"
+                }
+            ],
+            "link": "/observer-manual/observer-manual-usau.pdf",
             "resourceFormat": "PDF",
             "rulesets": [
                 "USAU"
@@ -172,6 +178,26 @@
             ]
         }
     ],
+    "refereeManuals": [
+        {
+            "id": "referee-manual-ufa",
+            "isOfficialUfaResource": true,
+            "imageSourceUrl": "/referee-manual/referee-manual-ufa.png",
+            "title": "UFA referee manual (PDF)",
+            "description": "The official UFA referee manual.  Updated for the 2026 season.",
+            "alternateVersions": [
+                {
+                    "title": "Original source",
+                    "link": "https://ufa.arbitersports.com/Groups/112909/Library/files/UFA%20Referee%20Manual%20v2026.pdf"
+                }
+            ],
+            "link": "/referee-manual/referee-manual-ufa.pdf",
+            "resourceFormat": "PDF",
+            "rulesets": [
+                "UFA"
+            ]
+        }
+    ],
     "rules": [
         {
             "id": "rules-wul",
@@ -191,7 +217,13 @@
             "imageSourceUrl": "/rules/rules-pul.png",
             "title": "PUL rules (PDF)",
             "description": "The PDF version of PUL's 2026 official rules.",
-            "link": "https://static1.squarespace.com/static/654a849963433d7f4352c0de/t/69c4114a072a5e37f3831bdb/1774457162498/2026+PUL+Rules.pdf",
+            "alternateVersions": [
+                {
+                    "title": "Original source",
+                    "link": "https://static1.squarespace.com/static/654a849963433d7f4352c0de/t/69c4114a072a5e37f3831bdb/1774457162498/2026+PUL+Rules.pdf"
+                }
+            ],
+            "link": "/rules/rules-pul.pdf",
             "resourceFormat": "PDF",
             "rulesets": [
                 "PUL"
@@ -203,7 +235,13 @@
             "imageSourceUrl": "/rules/rules-ufa.png",
             "title": "UFA rules (PDF)",
             "description": "The PDF version of UFA's 2026 official rules.",
-            "link": "https://watchufa.com/sites/default/files/UFA%20Rule%20Book%202026.pdf",
+            "alternateVersions": [
+                {
+                    "title": "Original source",
+                    "link": "https://watchufa.com/sites/default/files/UFA%20Rule%20Book%202026.pdf"
+                }
+            ],
+            "link": "/rules/rules-ufa.pdf",
             "resourceFormat": "PDF",
             "rulesets": [
                 "UFA"
@@ -229,7 +267,13 @@
             "imageSourceUrl": "/rules/rules-usau-pdf.png",
             "title": "USAU rules (PDF)",
             "description": "The PDF version of USAU's 2026-2027 official rules; well-suited for printing.",
-            "link": "https://usaultimate.org/wp-content/uploads/2025/12/2026-27-Official-Rules-of-Ultimate.pdf",
+            "alternateVersions": [
+                {
+                    "title": "Original source",
+                    "link": "https://usaultimate.org/wp-content/uploads/2025/12/2026-27-Official-Rules-of-Ultimate.pdf"
+                }
+            ],
+            "link": "/rules/rules-usau.pdf",
             "resourceFormat": "PDF",
             "rulesets": [
                 "USAU"

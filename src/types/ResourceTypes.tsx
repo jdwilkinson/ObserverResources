@@ -43,6 +43,12 @@ export class Radio extends Resource {
     }
 }
 
+export class RefereeManual extends Resource {
+    static createFromObject(obj: ResourceProperties): RefereeManual {
+        return new RefereeManual("Referee manual", obj);
+    }
+}
+
 export class Rules extends Resource {
     static createFromObject(obj: ResourceProperties): Rules {
         return new Rules("Rules", obj);

@@ -29,6 +29,10 @@ const App = () => {
           containedItems={Resources.getRenderedResourcesForRuleset(Resources.observerManuals, activeRuleset)} />
 
         <CollapsibleSection
+          sectionTitle="Referee manual"
+          containedItems={Resources.getRenderedResourcesForRuleset(Resources.refereeManuals, activeRuleset)} />
+
+        <CollapsibleSection
           sectionTitle="Jerseys"
           containedItems={Resources.getRenderedResourcesForRuleset(Resources.jerseys, activeRuleset)} />
 
@@ -81,7 +85,7 @@ const App = () => {
 
       <section>
         <div className="footer">
-          Last updated <b>2026-08-19</b>; see&nbsp;
+          Last updated <b>2026-08-20</b>; see&nbsp;
           <a href='https://github.com/jdwilkinson/ObserverResources/commits/main/' target='_blank'>
             detailed changelog
           </a>.
