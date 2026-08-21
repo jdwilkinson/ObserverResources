@@ -98,7 +98,7 @@
             "id": "observer-manual-usau",
             "isOfficialUsauResource": true,
             "imageSourceUrl": "/observer-manual/observer-manual-usau.png",
-            "title": "USAU observer manual (PDF)",
+            "title": "USAU observer manual",
             "description": "The official USAU observer manual, discussing how to apply the rules and how to conduct yourself as an observer.  Updated April 2024.",
             "alternateVersions": [
                 {
@@ -116,7 +116,7 @@
             "id": "observer-manual-pul",
             "isOfficialPulResource": true,
             "imageSourceUrl": "/observer-manual/observer-manual-pul.png",
-            "title": "PUL observer manual (PDF)",
+            "title": "PUL observer manual",
             "description": "The official PUL observer manual, for the 2026 season.",
             "link": "/observer-manual/observer-manual-pul.pdf",
             "resourceFormat": "PDF",
@@ -128,12 +128,36 @@
             "id": "observer-manual-clock-operator-pul",
             "isOfficialPulResource": true,
             "imageSourceUrl": "/observer-manual/observer-manual-clock-operator-pul.png",
-            "title": "PUL clock operator manual (PDF)",
+            "title": "PUL clock operator manual",
             "description": "The official PUL clock operator manual, for the 2026 season.",
             "link": "/observer-manual/observer-manual-clock-operator-pul.pdf",
             "resourceFormat": "PDF",
             "rulesets": [
                 "PUL"
+            ]
+        },
+        {
+            "id": "observer-manual-wul",
+            "isOfficialWulResource": true,
+            "imageSourceUrl": "/observer-manual/observer-manual-wul.png",
+            "title": "WUL observer tips & tricks",
+            "description": "The official WUL observer 'tips and tricks' document, for the 2026 season.",
+            "link": "/observer-manual/observer-manual-wul.pdf",
+            "resourceFormat": "PDF",
+            "rulesets": [
+                "WUL"
+            ]
+        },
+        {
+            "id": "observer-manual-clock-operator-wul",
+            "isOfficialWulResource": true,
+            "imageSourceUrl": "/observer-manual/observer-manual-clock-operator-wul.png",
+            "title": "WUL clock operator cheat sheet",
+            "description": "The official WUL clock operator 'cheat sheet', for the 2026 season.",
+            "link": "/observer-manual/observer-manual-clock-operator-wul.pdf",
+            "resourceFormat": "PDF",
+            "rulesets": [
+                "WUL"
             ]
         }
     ],
@@ -207,7 +231,7 @@
             "id": "referee-manual-ufa",
             "isOfficialUfaResource": true,
             "imageSourceUrl": "/referee-manual/referee-manual-ufa.png",
-            "title": "UFA referee manual (PDF)",
+            "title": "UFA referee manual",
             "description": "The official UFA referee manual.  Updated for the 2026 season.",
             "alternateVersions": [
                 {
@@ -227,7 +251,7 @@
             "id": "rules-wul",
             "isOfficialWulResource": true,
             "imageSourceUrl": "/rules/rules-wul.png",
-            "title": "WUL rules (web)",
+            "title": "WUL rules",
             "description": "The web-based version of WUL's 2026 official rules.",
             "link": "https://westernultimateleague.com/rules",
             "resourceFormat": "WebLink",
@@ -239,7 +263,7 @@
             "id": "rules-pul",
             "isOfficialPulResource": true,
             "imageSourceUrl": "/rules/rules-pul.png",
-            "title": "PUL rules (PDF)",
+            "title": "PUL rules",
             "description": "The PDF version of PUL's 2026 official rules.",
             "alternateVersions": [
                 {
@@ -257,7 +281,7 @@
             "id": "rules-ufa",
             "isOfficialUfaResource": true,
             "imageSourceUrl": "/rules/rules-ufa.png",
-            "title": "UFA rules (PDF)",
+            "title": "UFA rules",
             "description": "The PDF version of UFA's 2026 official rules.",
             "alternateVersions": [
                 {
@@ -495,15 +519,69 @@
             ]
         },
         {
-            "id": "scorecard-pul-burn",
-            "imageSourceUrl": "/scorecards/scorecard-pul-burn.png",
+            "id": "scorecard-pul-burn-two-sided",
+            "imageSourceUrl": "/scorecards/scorecard-pul-burn-two-sided.png",
             "title": "PUL two-sided",
             "description": "A two-sided scorecard, with handy quarter-start information on the reverse side.",
+            "courtesyOf": "Burn",
+            "link": "/scorecards/scorecard-pul-burn-two-sided.pdf",
+            "resourceFormat": "PDF",
+            "rulesets": [
+                "PUL"
+            ]
+        },
+        {
+            "id": "scorecard-pul-burn",
+            "imageSourceUrl": "/scorecards/scorecard-pul-burn.png",
+            "title": "PUL horizontal",
+            "description": "A horizontal PUL scorecard, with more score slots and dark on the right.",
             "courtesyOf": "Burn",
             "link": "/scorecards/scorecard-pul-burn.pdf",
             "resourceFormat": "PDF",
             "rulesets": [
                 "PUL"
+            ]
+        },
+        {
+            "id": "scorecard-ufa",
+            "isOfficialUfaResource": true,
+            "imageSourceUrl": "/scorecards/scorecard-ufa.png",
+            "title": "Official UFA scorecard",
+            "description": "The scorecard contained in the UFA referee manual; technically the 'official' UFA scorecard.",
+            "alternateVersions": [
+                {
+                    "title": "single-page",
+                    "link": "/scorecards/scorecard-ufa-single-page.pdf"
+                }
+            ],
+            "link": "/scorecards/scorecard-ufa.pdf",
+            "resourceFormat": "PDF",
+            "rulesets": [
+                "UFA"
+            ]
+        },
+        {
+            "id": "scorecard-wul",
+            "isOfficialWulResource": true,
+            "imageSourceUrl": "/scorecards/scorecard-wul.png",
+            "title": "Official WUL scorecard",
+            "description": "The scorecard contained in the WUL observer manual; technically the 'official' WUL scorecard.",
+            "link": "/scorecards/scorecard-wul.pdf",
+            "resourceFormat": "PDF",
+            "rulesets": [
+                "WUL"
+            ]
+        },
+        {
+            "id": "scorecard-wul-burn",
+            "imageSourceUrl": "/scorecards/scorecard-wul-burn.png",
+            "title": "WUL horizontal",
+            "description": "A horizontal WUL scorecard, with more score slots and dark on the right.",
+            "courtesyOf": "Burn",
+            "link": "/scorecards/scorecard-wul-burn.pdf",
+            "resourceFormat": "PDF",
+            "rulesets": [
+                "WUL"
             ]
         }
     ],
