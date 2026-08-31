@@ -543,6 +543,18 @@
             ]
         },
         {
+            "id": "scorecard-pul-joey",
+            "imageSourceUrl": "/scorecards/scorecard-pul-joey.png",
+            "title": "PUL horizontal",
+            "description": "A PUL scorecard with more score slots and handy rule reminders at the bottom.",
+            "courtesyOf": "Joey",
+            "link": "/scorecards/scorecard-pul-joey.pdf",
+            "resourceFormat": "PDF",
+            "rulesets": [
+                "PUL"
+            ]
+        },
+        {
             "id": "scorecard-ufa",
             "isOfficialUfaResource": true,
             "imageSourceUrl": "/scorecards/scorecard-ufa.png",
