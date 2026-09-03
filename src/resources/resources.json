@@ -1,4 +1,36 @@
 {
+    "apparel": [
+        {
+            "id": "apparel-discstore-pants",
+            "imageSourceUrl": "/apparel/apparel-discstore-pants.webp",
+            "title": "DiscStore pants",
+            "description": "Relatively inexpensive, these black pants are heavy, making them durable and warm. They run a bit large; consider ordering a size smaller than you wear for shorts.",
+            "courtesyOf": "Bill",
+            "link": "https://discstore.com/products/ultimate-tapered-pants?%3Fvariant%3D=47252049953068",
+            "resourceFormat": "WebLink",
+            "rulesets": [
+                "USAU",
+                "WUL",
+                "PUL",
+                "UFA"
+            ]
+        },
+        {
+            "id": "apparel-nike-coreflex-pants",
+            "imageSourceUrl": "/apparel/apparel-nike-coreflex-pants.jpg",
+            "title": "Nike CoreFlex pants",
+            "description": "These men's pants are light and stretchy, with a trim fit. They are relatively expensive, though.",
+            "courtesyOf": "Shaps",
+            "link": "https://www.amazon.com/dp/B07DWZ648R",
+            "resourceFormat": "Amazon",
+            "rulesets": [
+                "USAU",
+                "WUL",
+                "PUL",
+                "UFA"
+            ]
+        }
+    ],
     "apps": [
         {
             "id": "app-sota",
@@ -51,6 +83,18 @@
             "courtesyOf": "Austin",
             "link": "https://afbcary.github.io/obs-shep/",
             "resourceFormat": "WebLink",
+            "rulesets": [
+                "USAU"
+            ]
+        },
+        {
+            "id": "ho-tool-obtaining-observers",
+            "imageSourceUrl": "/head-observer-tools/ho-tool-obtaining-observers.png",
+            "title": "Obtaining Observers",
+            "description": "A guide to send to TDs that indcludes all kinds of detailed information about how to obtain, house, feed, and care for observers.",
+            "courtesyOf": "Bill",
+            "link": "/head-observer-tools/ho-tool-obtaining-observers.pdf",
+            "resourceFormat": "PDF",
             "rulesets": [
                 "USAU"
             ]

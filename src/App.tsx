@@ -45,9 +45,9 @@ const App = () => {
           containedItems={Resources.getRenderedResourcesForRuleset(Resources.shoes, activeRuleset)} />
 
         {/* TODO: Scour Discord for shorts, jackets, hats, etc */}
-        {/* <CollapsibleSection sectionTitle="Apparel">
-          ...
-        </CollapsibleSection> */}
+        <CollapsibleSection
+          sectionTitle="Apparel"
+          containedItems={Resources.getRenderedResourcesForRuleset(Resources.apparel, activeRuleset)} />
 
         <CollapsibleSection
           sectionTitle="Radios"
@@ -85,7 +85,7 @@ const App = () => {
 
       <section>
         <div className="footer">
-          Last updated <b>2026-08-31</b>; see&nbsp;
+          Last updated <b>2026-09-03</b>; see&nbsp;
           <a href='https://github.com/jdwilkinson/ObserverResources/commits/main/' target='_blank'>
             detailed changelog
           </a>.
