@@ -33,21 +33,21 @@ const App = () => {
           containedItems={Resources.getRenderedResourcesForRuleset(Resources.refereeManuals, activeRuleset)} />
 
         <CollapsibleSection
-          sectionTitle="Jerseys"
-          containedItems={Resources.getRenderedResourcesForRuleset(Resources.jerseys, activeRuleset)} />
-
-        <CollapsibleSection
           sectionTitle="Scorecards"
           containedItems={Resources.getRenderedResourcesForRuleset(Resources.scorecards, activeRuleset)} />
 
         <CollapsibleSection
-          sectionTitle="Shoes"
-          containedItems={Resources.getRenderedResourcesForRuleset(Resources.shoes, activeRuleset)} />
+          sectionTitle="Jerseys"
+          containedItems={Resources.getRenderedResourcesForRuleset(Resources.jerseys, activeRuleset)} />
 
         {/* TODO: Scour Discord for shorts, jackets, hats, etc */}
         <CollapsibleSection
           sectionTitle="Apparel"
           containedItems={Resources.getRenderedResourcesForRuleset(Resources.apparel, activeRuleset)} />
+
+        <CollapsibleSection
+          sectionTitle="Shoes"
+          containedItems={Resources.getRenderedResourcesForRuleset(Resources.shoes, activeRuleset)} />
 
         <CollapsibleSection
           sectionTitle="Radios"
