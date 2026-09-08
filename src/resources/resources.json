@@ -29,6 +29,36 @@
                 "PUL",
                 "UFA"
             ]
+        },
+        {
+            "id": "apparel-prana-stretch-zion-pants",
+            "imageSourceUrl": "/apparel/apparel-prana-stretch-zion-pants.jpg",
+            "title": "prAna Stretch Zion pants",
+            "description": "These women's pants are oversized and stretchy, with large hand pockets and a cargo pocket. They are also relatively expensive.",
+            "courtesyOf": "Saul",
+            "link": "https://www.amazon.com/dp/B0CPTMRYPZ",
+            "resourceFormat": "Amazon",
+            "rulesets": [
+                "USAU",
+                "WUL",
+                "PUL",
+                "UFA"
+            ]
+        },
+        {
+            "id": "apparel-target-jogger-pants",
+            "imageSourceUrl": "/apparel/apparel-target-jogger-pants.webp",
+            "title": "Target cargo jogger pants",
+            "description": "These men's pants are relatively inexpensive, with elastic cuffs, zippered side pockets, and a cargo pocket.",
+            "courtesyOf": "Saul",
+            "link": "https://www.target.com/p/men-39-s-utility-cargo-160-joggers-all-in-motion-8482-black-m/-/A-89390968",
+            "resourceFormat": "WebLink",
+            "rulesets": [
+                "USAU",
+                "WUL",
+                "PUL",
+                "UFA"
+            ]
         }
     ],
     "apps": [
